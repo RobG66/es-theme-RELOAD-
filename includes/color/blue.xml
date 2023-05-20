@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+   
+   <view name="menu">
+   <menuText name="menutext"> 
+   <fontPath>./_inc/Roboto-Medium.ttf</fontPath>
+   <fontSize>0.03</fontSize>
+   <color>A0A0A0</color>
+   <separatorColor>333333FF</separatorColor>
+   <selectorColor>0099ff</selectorColor>
+   <selectedColor>000000</selectedColor>
+	</menuText>
+	<menuText name="menutitle">
+    <fontPath>./fonts/Digital-Serial-Bold.ttf</fontPath>
+    <color>0099ff</color>
+    <fontSize>0.029</fontSize>
+    </menuText>
+    </view> 
+
+    <view name="basic, detailed, video, grid, gamecarousel, system">
+	
+    <helpsystem name="help">
+	<textColor>0099ff</textColor>
+	</helpsystem>
+	  
+	<text name="systemInfo,info1,info2,info3,info4,info5,info6,info7,info8,info9,info10,info11,info12,info13,info14,info15,info16,info17,info18,info19,info20,info21,info22,md_name">
+    <color>0099ff</color>
+    </text> 
+	
+	</view>
+		
+	<view name="video"> 
+	
+	<textlist name="gamelist">
+	<selectorImagePath>./includes/theme color/border/blue.png</selectorImagePath>
+    <selectedColor>0099ff</selectedColor>
+	<selectorColor>0099ff</selectorColor> 
+    </textlist>
+	
+   	<text name="md_lbl_developer">
+	<color>0099ff</color>
+	</text>
+	
+	<text name="md_lbl_releasedate">
+	<color>0099ff</color>
+	</text>
+	
+	<text name="md_lbl_rating">
+	<color>0099ff</color>
+	</text>
+	
+	<text name="md_lbl_genre">
+	<color>0099ff</color>
+	</text>
+	
+	<text name="md_lbl_publisher">
+	 <color>0099ff</color>
+	 </text>
+	 
+	 <text name="md_lbl_players">
+	 <color>0099ff</color>
+	 </text>
+	 
+	 <text name="md_lbl_playcount">
+	 <color>0099ff</color>
+	 </text>
+	 
+	 <text name="md_lbl_lastplayed">
+	 <color>0099ff</color>
+	 </text>
+	 
+	  <text name="md_lbl_gametime">
+	  <color>0099ff</color>
+	  </text>
+	 
+	  <text name="md_description">
+	  <color>0099ff</color>
+	  </text>
+	  
+	 	
+	</view>
+	
+	<view name="detailed,gamecarousel"> 
+	
+    <text name="md_lbl_developer">
+	<color>0099ff</color>
+	</text>
+	
+	<text name="md_lbl_releasedate">
+	<color>0099ff</color>
+	</text>
+	
+	<text name="md_lbl_rating">
+	<color>0099ff</color>
+	</text>
+	
+	<text name="md_lbl_genre">
+	<color>0099ff</color>
+	</text>
+	
+	 <text name="md_lbl_publisher">
+	 <color>0099ff</color>
+	 </text>
+	 
+	 <text name="md_lbl_players">
+	 <color>0099ff</color>
+	 </text>
+	 
+	 <text name="md_lbl_playcount">
+	 <color>0099ff</color>
+	 </text>
+	 
+	 <text name="md_lbl_lastplayed">
+	 <color>0099ff</color>
+	 </text>
+	 
+	  <text name="md_lbl_gametime">
+	  <color>0099ff</color>
+	  </text>
+	 
+	  <text name="md_description">
+	  <color>0099ff</color>
+	  </text>
+	  
+	  </view>
+	 
+	
+	<view name="grid"> 
+	
+	<text name="md_lbl_developer">
+    <color>0099ff</color>
+    </text> 
+
+    <text name="md_lbl_publisher">
+    <color>0099ff</color>
+    </text> 
+
+    <text name="md_lbl_releasedate">
+    <color>0099ff</color>
+    </text> 
+	
+    <text name="md_lbl_rating">
+    <color>0099ff</color>
+    </text> 
+	
+	</view>
+	
+	<view name="basic"> 
+	
+    <text name="md_lbl_developer">
+	<color>0099ff</color>
+	</text>
+	
+	<text name="md_lbl_releasedate">
+	<color>0099ff</color>
+	</text>
+	
+	<text name="md_lbl_rating">
+	<color>0099ff</color>
+	</text>
+	
+	<text name="md_lbl_genre">
+	<color>0099ff</color>
+	</text>
+	
+	 <text name="md_lbl_publisher">
+	 <color>0099ff</color>
+	 </text>
+	 
+	 <text name="md_lbl_players">
+	 <color>0099ff</color>
+	 </text>
+	 
+	 <text name="md_lbl_playcount">
+	 <color>0099ff</color>
+	 </text>
+	 
+	 <text name="md_lbl_lastplayed">
+	 <color>0099ff</color>
+	 </text>
+	 
+	  <text name="md_lbl_gametime">
+	  <color>0099ff</color>
+	  </text>
+	 
+	  <text name="md_description">
+	  <color>0099ff</color>
+	  </text>
+	 
+	</view>
+	
+		    
+	<view name="screen">
+    <text name="clock">
+	<color>0099ff</color>
+	</text>
+	</view>
+	
+	<view name="basic">
+         <textlist name="gamelist">
+         <selectorColor>0099ff</selectorColor> 
+	     <selectedColor>000000</selectedColor>     
+         <primaryColor>ffffff</primaryColor>
+         <secondaryColor>ffffff</secondaryColor>
+         </textlist>
+   </view>
+   
+      <view name="detailed,gamecarousel">
+         <textlist name="gamelist">
+         <selectorColor>0099ff</selectorColor> 
+	     <selectedColor>000000</selectedColor>     
+         <primaryColor>ffffff</primaryColor>
+         <secondaryColor>ffffff</secondaryColor>
+           </textlist>
+   </view>
+   
+      
+   <view name="grid">
+         <textlist name="gamelist">
+		 <selectorColor>0099ff</selectorColor> 
+	     <selectedColor>000000</selectedColor>     
+         <primaryColor>ffffff</primaryColor>
+         <secondaryColor>ffffff</secondaryColor>
+           </textlist>
+   </view>
+   
+   <view name="gamecarousel">
+         <textlist name="gamelist">
+         <selectorColor>0099ff</selectorColor> 
+	     <selectedColor>000000</selectedColor>     
+         <primaryColor>ffffff</primaryColor>
+         <secondaryColor>ffffff</secondaryColor>
+           </textlist>
+   </view>
+   
+     <view name="system">
+		<text name="logoText">
+		<fontSize>0.040</fontSize>
+		<text>${system.theme}</text>
+		<color>0099ff</color>
+		<glowColor>black</glowColor>
+		<glowSize>1</glowSize>
+		<forceUppercase>true</forceUppercase>
+		</text>		
+	</view>
+
+	<view name="gamecarousel">
+		<text name="gamecarouselLogoText">
+		<fontSize>0.04</fontSize>
+		<color>0099ff</color>
+		<glowColor>black</glowColor>
+		<glowSize>1</glowSize>
+		<forceUppercase>true</forceUppercase>
+		</text>	
+	</view>
+
+
+</theme>
