@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+<formatVersion>7</formatVersion>
+
+<view name="system">
+
+<!---------------------------------------------------------------------->
+<!----------------------------- CAROUSEL  ------------------------------>
+<!---------------------------------------------------------------------->
+
+<carousel name="systemcarousel">
+<scrollSpeed>2.0</scrollSpeed>
+<zIndex>10</zIndex>	   
+<origin>0 0</origin>   
+<size>1 1</size>
+<type>vertical_wheel</type>
+<pos ifSubset="Wheel Position:Right">0.34 0</pos>
+<pos ifSubset="Wheel Position:Left">-0.34  0</pos>
+<logoSize>0.15 0.250</logoSize>
+<logoScale>1.3</logoScale> 
+<color>00000000</color>
+<logoRotation>-12.5</logoRotation>
+<logoRotationOrigin ifSubset="Wheel Position:Right">4 0.5</logoRotationOrigin>
+<logoRotationOrigin ifSubset="Wheel Position:Left">-2.0 0.5</logoRotationOrigin>
+<logoRotation ifSubset="Wheel Position:Right">-10.5</logoRotation>
+<logoRotation ifSubset="Wheel Position:Left">-14.5</logoRotation>
+<logoAlignment>center</logoAlignment>        
+<defaultTransition>instant</defaultTransition>	      
+</carousel>
+
+<!---------------------------------------------------------------------->
+<!---------------------------- HELP / INFO  ---------------------------->
+<!---------------------------------------------------------------------->
+
+<text name="systemInfo">
+<origin>0.5 0.5</origin>
+<pos ifSubset="Wheel Position:Right">0.7 0.10</pos>
+<pos ifSubset="Wheel Position:Left">0.3 0.10</pos>
+<backgroundColor>00000000</backgroundColor>
+<color>ffffff</color>
+<glowColor>000000</glowColor>
+<zIndex>6</zIndex>	  
+<storyboard>
+<animation property="opacity" from="0" to="1" begin="100" duration="500" mode="EaseOut"/>
+</storyboard>  
+</text>
+
+
+<helpsystem name="help">
+<pos>0 0.97</pos>    
+<textColor>ffffff</textColor>
+<iconColor>ffffff</iconColor>
+</helpsystem>
+
+<!---------------------------------------------------------------->
+<!--------------------------- SYSTEM ART ------------------------->
+<!---------------------------------------------------------------->
+
+<image name="pointer" extra="true">
+<pos ifSubset="Wheel Position:Right">0.94 0.405</pos>
+<pos ifSubset="Wheel Position:Left">0.0 0.405</pos>
+<rotation ifSubset="Wheel Position:Left">180</rotation>
+<rotation ifSubset="Wheel Position:Right">0</rotation>
+<maxSize>0.2 0.2</maxSize>
+<path>./art/wheel/pointers/default.png</path>
+<path>./art/wheel/pointers/${system.theme}.png</path>
+<zIndex>5</zIndex>
+</image>
+
+<video name="background_video" extra="true" ifSubset="Video:ON">
+<pos ifSubset="Wheel Position:Right">0.37 0.5</pos>
+<pos ifSubset="Wheel Position:Left">0.63 0.5</pos>
+<origin>0.5 0.5</origin>
+<maxSize>0.60 0.60</maxSize>
+<path>{random}</path>
+<path>./videos/${system.theme}.mp4</path>
+<path>./videos/${system.theme}.flv</path>
+<path>./videos/${system.theme}.avi</path>
+<delay>2</delay>
+<zIndex>5</zIndex>
+<storyboard>
+<animation property="scale" from="0.8" to="1" begin="0" duration="500" mode="linear"/>
+</storyboard>  
+</video>
+
+
+<!-- It works, but not all video are 16x9. Leaving off for now
+<video name="mm_video_frame" extra="true" ifSubset="Video:ON">
+<pos>0.38 0.51</pos>
+<origin>0.5 0.5</origin>
+<size>0.73 0.76</size>
+<path>./art/video frames/main_menu_wheel_video_frame.png</path>
+<delay>2</delay>
+<zIndex>6</zIndex>
+<storyboard>
+<animation property="scale" from="0.8" to="1" begin="0" duration="500" mode="linear"/>
+</storyboard>  
+</video>
+-->
+
+<image name="logotype" extra="true">
+<pos>0.50 0.10</pos>
+<origin>0.5 0.5</origin>
+<maxSize>0.250 0.14</maxSize>
+<path>./art/logos/clean/${system.theme}.png</path>
+<path>./art/logos/clean/${system.theme}.jpg</path>
+<path>./art/logos/clean/${system.theme}.webp</path>
+<path>./art/logos/clean/${system.theme}.bmp</path>
+<zIndex>5</zIndex>
+<storyboard>
+<animation mode="easyIn" duration="2500" begin="1000" property="scale" repeat="forever" autoreverse="true" from="0.97" to="1"/>
+</storyboard>
+</image>
+
+<!------------------------------------------------------------------->
+<!--------------------------- FIXED ART ----------------------------->
+<!------------------------------------------------------------------->
+
+<image name="swb1" ifSubset="Wheel Background:Light" extra="true">
+<pos>0 0</pos>
+<size>1 1</size>
+<path>./art/wheel/light.png</path>
+<zIndex>4</zIndex>
+<rotation ifSubset="Wheel Position:Left">180</rotation>
+<rotation ifSubset="Wheel Position:Right">0</rotation>
+</image>
+
+<image name="swb2" ifSubset="Wheel Background:Dark" extra="true">
+<pos>0 0</pos>
+<size>1 1</size>
+<path>./art/wheel/dark.png</path>
+<zIndex>4</zIndex>
+<rotation ifSubset="Wheel Position:Left">180</rotation>
+<rotation ifSubset="Wheel Position:Right">0</rotation>
+
+</image>
+
+<!-- Since video was made larger, shadow does not fit anymore.
+<image name="video shadow" ifSubset="Video:ON" extra="true">
+<pos>0 0</pos>
+<size>1 1</size>
+<path>./art/wheel/video shadow.png</path>
+<zIndex>3</zIndex>
+<storyboard>
+<animation property="opacity" from="0" to="0" begin="0" duration="500" mode="linear"/>
+<animation property="opacity" from="0" to="1" begin="1800" duration="1000" mode="linear"/>
+</storyboard>
+</image>
+-->
+
+</view>
+ 
+</theme>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+<customView name="Gamecarousel Detailed" inherits="gamecarousel">
+
+<image name="icon_background_small" extra="true">
+<visible>false</visible>
+</image>
+
+<image name="icon_background_big" extra="true">
+<path>./art/gamelist/icon_background_detailed.png</path>
+<pos ifSubset="Wheel Position:Right">0.6155 0.34</pos>
+<pos ifSubset="Wheel Position:Left">0.382 0.34</pos>
+<origin>0.5 0.5</origin>
+<maxSize>0.53 0.43</maxSize>
+<zIndex>12</zIndex>
+<opacity>.75</opacity>
+</image>
+
+<image name="md_thumbnail" extra="true" ifSubset="Wheel Extra:Box">
+<pos ifSubset="Wheel Position:Right">0.62 0.76</pos>
+<pos ifSubset="Wheel Position:Left">0.38 0.76</pos>
+<origin>0.5 0.5</origin>
+<maxSize>0.15 .38</maxSize>
+<zIndex>12</zIndex>
+<storyboard>
+<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+</storyboard>    
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+</storyboard>  
+</image>
+
+<image name="character" extra="true" ifSubset="Wheel Extra:Character">
+<path>./art/characters/default.png</path>
+<path>./art/characters/${system.theme}.png</path>
+<pos ifSubset="Wheel Position:Right">0.63 0.76</pos>
+<pos ifSubset="Wheel Position:Left">0.35 0.76</pos>
+<origin>0.5 0.5</origin>
+<maxSize>0.15 0.38</maxSize>
+<zIndex>12</zIndex>
+<storyboard>
+<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+</storyboard>    
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+</storyboard>  
+</image>
+		
+<!-- Regional Flag -->
+<image name="md_flag">
+<origin>0 0</origin>
+<pos ifSubset="Wheel Position:Right">0.527 0.157</pos>
+<pos ifSubset="Wheel Position:Left">0.293 0.157</pos>
+<maxSize>0.030 0.030</maxSize>
+<zIndex>999</zIndex>
+</image>
+
+<!--  Favorite Icons -->	
+<image name="md_notfavorite" extra="true">
+<origin>0 0</origin>
+<pos ifSubset="Wheel Position:Right">0.557 0.155</pos>
+<pos ifSubset="Wheel Position:Left">0.323 0.155</pos>
+<maxSize>0.035 0.035</maxSize>
+<color>80808090</color>
+<path>./art/other icons/favorite.png</path>
+<zIndex>999</zIndex>
+</image> 
+
+<image name="md_favorite">
+<origin>0 0</origin>
+<pos ifSubset="Wheel Position:Right">0.557 0.155</pos>
+<pos ifSubset="Wheel Position:Left">0.323 0.155</pos>
+<maxSize>0.035 0.035</maxSize>
+<path>./art/other icons/favorite.png</path>
+<zIndex>999</zIndex>
+<color>dddddd</color>
+</image> 
+
+
+<!--  Save State Icons -->
+<image name="md_nosavestate" extra="true">
+<origin>0 0</origin>
+<pos ifSubset="Wheel Position:Right">0.581 0.155</pos>
+<pos ifSubset="Wheel Position:Left">0.348 0.155</pos>
+<maxSize>0.035 0.035</maxSize>
+<path>./art/other icons/savestate.png</path>
+<color>80808090</color>
+<zIndex>150</zIndex>
+</image>
+
+<image name="md_savestate">
+<origin>0 0</origin>
+<pos ifSubset="Wheel Position:Right">0.581 0.155</pos>
+<pos ifSubset="Wheel Position:Left">0.348 0.155</pos>
+<maxSize>0.035 0.035</maxSize>
+<path>./art/other icons/savestate.png</path>
+<color>dddddd</color>
+<zIndex>150</zIndex>
+</image>
+ 
+<!--  Achievement Icons -->		
+		
+<image name="md_notcheevos" extra="true">
+<origin>0 0</origin>
+<pos ifSubset="Wheel Position:Right">0.608 0.155</pos>
+<pos ifSubset="Wheel Position:Left">0.375 0.155</pos>
+<maxSize>0.035 0.035</maxSize>
+<path>./art/other icons/cheevos.png</path>
+<color>80808090</color>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+
+<image name="md_cheevos">
+<origin>0 0</origin>
+<pos ifSubset="Wheel Position:Right">0.608 0.155</pos>
+<pos ifSubset="Wheel Position:Left">0.375 0.155</pos>
+<maxSize>0.035 0.035</maxSize>
+<path>./art/other icons/cheevos.png</path>
+<color>dddddd</color>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+
+<!-- PDF from gamelist -->
+<!--  Manual Icons -->
+<image name="md_nomanual" extra="true">
+<origin>0 0</origin>
+<pos ifSubset="Wheel Position:Right">0.634 0.155</pos>
+<pos ifSubset="Wheel Position:Left">0.400 0.155</pos>
+<maxSize>0.035 0.035</maxSize>
+<path>./art/other icons/manual.png</path>
+<color>80808090</color>
+</image>
+
+<image name="md_manual">
+<origin>0 0</origin>
+<pos ifSubset="Wheel Position:Right">0.634 0.155</pos>
+<pos ifSubset="Wheel Position:Left">0.400 0.155</pos>
+<maxSize>0.035 0.035</maxSize>
+<path>./art/other icons/manual.png</path>
+<color>dddddd</color>
+</image>
+		
+<!--  Map Icons -->	
+<image name="md_nomap" extra="true">
+<origin>0 0</origin>
+<pos ifSubset="Wheel Position:Right">0.661 0.155</pos>
+<pos ifSubset="Wheel Position:Left">0.427 0.155</pos>
+<maxSize>0.035 0.035</maxSize>
+<path>./art/other icons/map.png</path>
+<color>80808090</color>
+</image>
+
+<image name="md_map">
+<origin>0 0</origin>
+<pos ifSubset="Wheel Position:Right">0.661 0.155</pos>
+<pos ifSubset="Wheel Position:Left">0.427 0.155</pos>
+<maxSize>0.035 0.035</maxSize>
+<path>./art/other icons/map.png</path>
+<color>dddddd</color>
+</image>
+
+<!--  Kid Game Icons -->
+<image name="md_notkidgame" extra="true"> 
+<origin>0 0</origin>
+<pos ifSubset="Wheel Position:Right">0.689 0.155</pos>
+<pos ifSubset="Wheel Position:Left">0.455 0.155</pos>
+<maxSize>0.035 0.035</maxSize>
+<path>./art/other icons/kid.png</path>
+<color>80808090</color>
+<zIndex>100</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+
+<image name="md_kidgame"> 
+<origin>0 0</origin>
+<pos ifSubset="Wheel Position:Right">0.689 0.155</pos>
+<pos ifSubset="Wheel Position:Left">0.455 0.155</pos>
+<maxSize>0.035 0.035</maxSize>
+<path>./art/other icons/kid.png</path>
+<color>dddddd</color>
+<zIndex>100</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+
+<image name="md_favorite, md_map, md_manual, md_savestate, md_cheevos, md_hidden, md_kidgame">
+<storyboard>  
+<animation property="opacity" from="0.6" to="1"  duration="350" mode="easeInOut" autoreverse="true" repeat="forever"/>   
+</storyboard>
+</image>
+
+
+<!--  Publisher Text -->
+<text name="md_lbl_publisher">
+<visible>true</visible>
+<pos ifSubset="Wheel Position:Right">0.521 0.195</pos>
+<pos ifSubset="Wheel Position:Left">0.291 0.195</pos>
+<size>0.15 0.035</size>
+<zIndex>15</zIndex>     
+</text>
+
+<!--  Publisher Value -->	  
+<text name="md_publisher">
+<visible>true</visible>
+<pos ifSubset="Wheel Position:Right">0.615 0.195</pos>
+<pos ifSubset="Wheel Position:Left">0.380 0.195</pos>
+<size>0.09 0.035</size>
+<color>ffffff</color>
+<zIndex>15</zIndex>   
+ </text>
+
+<!--  Developer Text -->
+<text name="md_lbl_developer">
+<visible>true</visible>
+<pos ifSubset="Wheel Position:Right">0.521 0.230</pos>
+<pos ifSubset="Wheel Position:Left">0.291 0.230</pos>
+<size>0.15 0.035</size>
+<zIndex>15</zIndex>        
+</text>
+
+<!--  Developer Value -->	  
+<text name="md_developer">
+<visible>true</visible>
+<pos ifSubset="Wheel Position:Right">0.615 0.230</pos>
+<pos ifSubset="Wheel Position:Left">0.380 0.230</pos>
+<size>0.09 0.035</size>
+<color>ffffff</color>
+<zIndex>15</zIndex>	
+</text>
+
+<!--  Release Date Text -->	  
+<text name="md_lbl_releasedate">
+<visible>true</visible>
+<pos ifSubset="Wheel Position:Right">0.521 0.265</pos>
+<pos ifSubset="Wheel Position:Left">0.291 0.265</pos>
+<size>0.15 0.035</size>
+<zIndex>15</zIndex> 
+</text>
+	  
+<!--  Release Date Value -->
+<datetime name="md_releasedate">
+<visible>true</visible>
+<pos ifSubset="Wheel Position:Right">0.615 0.265</pos>
+<pos ifSubset="Wheel Position:Left">0.380 0.265</pos>
+<size>0.15 0.035</size>
+<color>ffffff</color>
+<zIndex>15</zIndex>
+</datetime>
+
+
+<!--  Genre Text -->	  
+<text name="md_lbl_genre">
+<visible>true</visible>
+<pos ifSubset="Wheel Position:Right">0.521 0.300</pos>
+<pos ifSubset="Wheel Position:Left">0.291 0.300</pos>
+<size>0.15 0.035</size>
+<zIndex>15</zIndex>  
+</text>
+
+<!--  Genre Value -->	  
+<text name="md_genre">
+<visible>true</visible>
+<pos ifSubset="Wheel Position:Right">0.615 0.300</pos>
+<pos ifSubset="Wheel Position:Left">0.380 0.300</pos>
+<size>0.09 0.035</size>
+<color>ffffff</color>
+<zIndex>15</zIndex> 
+</text>   
+
+<!--  Number Of Players Text -->	  
+<text name="md_lbl_players">
+<visible>true</visible>
+<pos ifSubset="Wheel Position:Right">0.521 0.335</pos>
+<pos ifSubset="Wheel Position:Left">0.291 0.335</pos>
+<size>0.15 0.035</size>
+<zIndex>15</zIndex>    
+</text>
+
+<!--  Number Of Players Value -->	  
+<text name="md_players">
+<visible>true</visible>
+<pos ifSubset="Wheel Position:Right">0.615 0.335</pos>
+<pos ifSubset="Wheel Position:Left">0.380 0.335</pos>
+<size>0.15 0.035</size>
+<color>ffffff</color>
+<zIndex>15</zIndex>     
+</text>	
+
+<!--  Play Count Text -->
+<text name="md_lbl_playcount">
+<visible>true</visible>
+<pos ifSubset="Wheel Position:Right">0.521 0.370</pos>
+<pos ifSubset="Wheel Position:Left">0.291 0.370</pos>
+<size>0.15 0.035</size>
+<zIndex>15</zIndex>  
+</text>
+
+<!--  Play Count Value -->	
+<text name="md_playcount">
+<visible>true</visible>
+<pos ifSubset="Wheel Position:Right">0.615 0.370</pos>
+<pos ifSubset="Wheel Position:Left">0.380 0.370</pos>
+<size>0.15 0.035</size>
+<color>ffffff</color>
+<zIndex>15</zIndex>  
+</text>
+  
+<!--  Last Played Text -->	  
+<text name="md_lbl_lastplayed">
+<visible>true</visible>
+<pos ifSubset="Wheel Position:Right">0.521 0.405</pos>
+<pos ifSubset="Wheel Position:Left">0.291 0.405</pos>
+<size>0.15 0.035</size>
+<zIndex>15</zIndex>  
+</text>
+
+<!--  Last Played Value -->	  
+<datetime name="md_lastplayed">
+<visible>true</visible>
+<pos ifSubset="Wheel Position:Right">0.615 0.405</pos>
+<pos ifSubset="Wheel Position:Left">0.380 0.405</pos>
+<size>0.15 0.035</size>
+<color>ffffff</color>
+<zIndex>15</zIndex>        
+</datetime>   	
+  
+<!--  Game Time Text -->
+<text name="md_lbl_gametime">
+<visible>true</visible>
+<pos ifSubset="Wheel Position:Right">0.521 0.440</pos>
+<pos ifSubset="Wheel Position:Left">0.291 0.440</pos>
+<size>0.15 0.035</size>
+<zIndex>15</zIndex>    
+</text>
+
+<!--  Game Time Value -->	
+<text name="md_gametime">
+<visible>true</visible>
+<pos ifSubset="Wheel Position:Right">0.615 0.440</pos>
+<pos ifSubset="Wheel Position:Left">0.380 0.440</pos>
+<size>0.15 0.035</size>
+<color>ffffff</color>
+<zIndex>15</zIndex>      
+</text>	
+
+<!-- Rating Value-->		
+<rating name="md_rating">
+<visible>true</visible>      
+<pos ifSubset="Wheel Position:Right">0.64 0.51</pos>
+<pos ifSubset="Wheel Position:Left">0.41 0.51</pos>
+<size>0.15 0.035</size>
+<maxSize>0.100 0.030</maxSize>
+<filledPath>./art/other icons/star_filled.png</filledPath>
+<unfilledPath>./art/other icons/star_empty.png</unfilledPath>	
+<zIndex>15</zIndex>
+</rating>	 
+
+</customView>
+ 
+</theme>
