@@ -4,17 +4,17 @@
 	<view name="menu, system, basic, detailed, video, grid, gamecarousel">
 		<helpsystem name="help">
 			<iconColor>FFFFFFFF</iconColor>
-			<iconUpDown>./inclues/buttons/switch/updown.png</iconUpDown>
-			<iconLeftRight>./inclues/buttons/switch/leftright.png</iconLeftRight>
-			<iconUpDownLeftRight>./inclues/buttons/switch/all.png</iconUpDownLeftRight>
-			<iconA>./inclues/buttons/switch/a.png</iconA>
-			<iconB>./inclues/buttons/switch/b.png</iconB>
-			<iconX>./inclues/buttons/switch/x.png</iconX>
-			<iconY>./inclues/buttons/switch/y.png</iconY>
-			<iconL>./inclues/buttons/switch/l.png</iconL>
-			<iconR>./inclues/buttons/switch/r.png</iconR>
-			<iconStart>./inclues/buttons/switch/start.png</iconStart>
-			<iconSelect>./inclues/buttons/switch/select.png</iconSelect>
+			<iconUpDown>./includes/buttons/switch/updown.png</iconUpDown>
+			<iconLeftRight>./includes/buttons/switch/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./includes/buttons/switch/all.png</iconUpDownLeftRight>
+			<iconA>./includes/buttons/switch/a.png</iconA>
+			<iconB>./includes/buttons/switch/b.png</iconB>
+			<iconX>./includes/buttons/switch/x.png</iconX>
+			<iconY>./includes/buttons/switch/y.png</iconY>
+			<iconL>./includes/buttons/switch/l.png</iconL>
+			<iconR>./includes/buttons/switch/r.png</iconR>
+			<iconStart>./includes/buttons/switch/start.png</iconStart>
+			<iconSelect>./includes/buttons/switch/select.png</iconSelect>
 		</helpsystem>		
 	</view>
 	

@@ -10,7 +10,7 @@
 
 <image name="icon_background_big" extra="true">
 <path>./art/gamelist/icon_background_detailed.png</path>
-<pos ifSubset="Wheel Position:Right">0.6155 0.34</pos>
+<pos ifSubset="Wheel Position:Right">0.614 0.34</pos>
 <pos ifSubset="Wheel Position:Left">0.382 0.34</pos>
 <origin>0.5 0.5</origin>
 <maxSize>0.53 0.43</maxSize>
@@ -208,7 +208,7 @@
 <!--  Publisher Text -->
 <text name="md_lbl_publisher">
 <visible>true</visible>
-<pos ifSubset="Wheel Position:Right">0.521 0.195</pos>
+<pos ifSubset="Wheel Position:Right">0.522 0.195</pos>
 <pos ifSubset="Wheel Position:Left">0.291 0.195</pos>
 <size>0.15 0.035</size>
 <zIndex>15</zIndex>     
@@ -217,7 +217,7 @@
 <!--  Publisher Value -->	  
 <text name="md_publisher">
 <visible>true</visible>
-<pos ifSubset="Wheel Position:Right">0.615 0.195</pos>
+<pos ifSubset="Wheel Position:Right">0.616 0.195</pos>
 <pos ifSubset="Wheel Position:Left">0.380 0.195</pos>
 <size>0.09 0.035</size>
 <color>ffffff</color>
@@ -227,7 +227,7 @@
 <!--  Developer Text -->
 <text name="md_lbl_developer">
 <visible>true</visible>
-<pos ifSubset="Wheel Position:Right">0.521 0.230</pos>
+<pos ifSubset="Wheel Position:Right">0.522 0.230</pos>
 <pos ifSubset="Wheel Position:Left">0.291 0.230</pos>
 <size>0.15 0.035</size>
 <zIndex>15</zIndex>        
@@ -236,7 +236,7 @@
 <!--  Developer Value -->	  
 <text name="md_developer">
 <visible>true</visible>
-<pos ifSubset="Wheel Position:Right">0.615 0.230</pos>
+<pos ifSubset="Wheel Position:Right">0.616 0.230</pos>
 <pos ifSubset="Wheel Position:Left">0.380 0.230</pos>
 <size>0.09 0.035</size>
 <color>ffffff</color>
@@ -246,7 +246,7 @@
 <!--  Release Date Text -->	  
 <text name="md_lbl_releasedate">
 <visible>true</visible>
-<pos ifSubset="Wheel Position:Right">0.521 0.265</pos>
+<pos ifSubset="Wheel Position:Right">0.522 0.265</pos>
 <pos ifSubset="Wheel Position:Left">0.291 0.265</pos>
 <size>0.15 0.035</size>
 <zIndex>15</zIndex> 
@@ -255,7 +255,7 @@
 <!--  Release Date Value -->
 <datetime name="md_releasedate">
 <visible>true</visible>
-<pos ifSubset="Wheel Position:Right">0.615 0.265</pos>
+<pos ifSubset="Wheel Position:Right">0.616 0.265</pos>
 <pos ifSubset="Wheel Position:Left">0.380 0.265</pos>
 <size>0.15 0.035</size>
 <color>ffffff</color>
@@ -266,7 +266,7 @@
 <!--  Genre Text -->	  
 <text name="md_lbl_genre">
 <visible>true</visible>
-<pos ifSubset="Wheel Position:Right">0.521 0.300</pos>
+<pos ifSubset="Wheel Position:Right">0.522 0.300</pos>
 <pos ifSubset="Wheel Position:Left">0.291 0.300</pos>
 <size>0.15 0.035</size>
 <zIndex>15</zIndex>  
@@ -275,7 +275,7 @@
 <!--  Genre Value -->	  
 <text name="md_genre">
 <visible>true</visible>
-<pos ifSubset="Wheel Position:Right">0.615 0.300</pos>
+<pos ifSubset="Wheel Position:Right">0.616 0.300</pos>
 <pos ifSubset="Wheel Position:Left">0.380 0.300</pos>
 <size>0.09 0.035</size>
 <color>ffffff</color>
@@ -285,7 +285,7 @@
 <!--  Number Of Players Text -->	  
 <text name="md_lbl_players">
 <visible>true</visible>
-<pos ifSubset="Wheel Position:Right">0.521 0.335</pos>
+<pos ifSubset="Wheel Position:Right">0.522 0.335</pos>
 <pos ifSubset="Wheel Position:Left">0.291 0.335</pos>
 <size>0.15 0.035</size>
 <zIndex>15</zIndex>    
@@ -294,7 +294,7 @@
 <!--  Number Of Players Value -->	  
 <text name="md_players">
 <visible>true</visible>
-<pos ifSubset="Wheel Position:Right">0.615 0.335</pos>
+<pos ifSubset="Wheel Position:Right">0.616 0.335</pos>
 <pos ifSubset="Wheel Position:Left">0.380 0.335</pos>
 <size>0.15 0.035</size>
 <color>ffffff</color>
@@ -304,7 +304,7 @@
 <!--  Play Count Text -->
 <text name="md_lbl_playcount">
 <visible>true</visible>
-<pos ifSubset="Wheel Position:Right">0.521 0.370</pos>
+<pos ifSubset="Wheel Position:Right">0.522 0.370</pos>
 <pos ifSubset="Wheel Position:Left">0.291 0.370</pos>
 <size>0.15 0.035</size>
 <zIndex>15</zIndex>  
@@ -313,7 +313,7 @@
 <!--  Play Count Value -->	
 <text name="md_playcount">
 <visible>true</visible>
-<pos ifSubset="Wheel Position:Right">0.615 0.370</pos>
+<pos ifSubset="Wheel Position:Right">0.616 0.370</pos>
 <pos ifSubset="Wheel Position:Left">0.380 0.370</pos>
 <size>0.15 0.035</size>
 <color>ffffff</color>
@@ -323,7 +323,7 @@
 <!--  Last Played Text -->	  
 <text name="md_lbl_lastplayed">
 <visible>true</visible>
-<pos ifSubset="Wheel Position:Right">0.521 0.405</pos>
+<pos ifSubset="Wheel Position:Right">0.522 0.405</pos>
 <pos ifSubset="Wheel Position:Left">0.291 0.405</pos>
 <size>0.15 0.035</size>
 <zIndex>15</zIndex>  
@@ -332,7 +332,7 @@
 <!--  Last Played Value -->	  
 <datetime name="md_lastplayed">
 <visible>true</visible>
-<pos ifSubset="Wheel Position:Right">0.615 0.405</pos>
+<pos ifSubset="Wheel Position:Right">0.616 0.405</pos>
 <pos ifSubset="Wheel Position:Left">0.380 0.405</pos>
 <size>0.15 0.035</size>
 <color>ffffff</color>
@@ -342,7 +342,7 @@
 <!--  Game Time Text -->
 <text name="md_lbl_gametime">
 <visible>true</visible>
-<pos ifSubset="Wheel Position:Right">0.521 0.440</pos>
+<pos ifSubset="Wheel Position:Right">0.522 0.440</pos>
 <pos ifSubset="Wheel Position:Left">0.291 0.440</pos>
 <size>0.15 0.035</size>
 <zIndex>15</zIndex>    
@@ -351,7 +351,7 @@
 <!--  Game Time Value -->	
 <text name="md_gametime">
 <visible>true</visible>
-<pos ifSubset="Wheel Position:Right">0.615 0.440</pos>
+<pos ifSubset="Wheel Position:Right">0.616 0.440</pos>
 <pos ifSubset="Wheel Position:Left">0.380 0.440</pos>
 <size>0.15 0.035</size>
 <color>ffffff</color>

@@ -4,17 +4,17 @@
 	<view name="menu, system, basic, detailed, video, grid, gamecarousel">
 		<helpsystem name="help">
 			<iconColor>FFFFFFFF</iconColor>
-			<iconUpDown>./inclues/buttons/snesalt/updown.png</iconUpDown>
-			<iconLeftRight>./inclues/buttons/snesalt/leftright.png</iconLeftRight>
-			<iconUpDownLeftRight>./inclues/buttons/snesalt/all.png</iconUpDownLeftRight>
-			<iconA>./inclues/buttons/snesalt/a.png</iconA>
-			<iconB>./inclues/buttons/snesalt/b.png</iconB>
-			<iconX>./inclues/buttons/snesalt/x.png</iconX>
-			<iconY>./inclues/buttons/snesalt/y.png</iconY>
-			<iconL>./inclues/buttons/snesalt/l.png</iconL>
-			<iconR>./inclues/buttons/snesalt/r.png</iconR>
-			<iconStart>./inclues/buttons/snesalt/start.png</iconStart>
-			<iconSelect>./inclues/buttons/snesalt/select.png</iconSelect>
+			<iconUpDown>./includes/buttons/snesalt/updown.png</iconUpDown>
+			<iconLeftRight>./includes/buttons/snesalt/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./includes/buttons/snesalt/all.png</iconUpDownLeftRight>
+			<iconA>./includes/buttons/snesalt/a.png</iconA>
+			<iconB>./includes/buttons/snesalt/b.png</iconB>
+			<iconX>./includes/buttons/snesalt/x.png</iconX>
+			<iconY>./includes/buttons/snesalt/y.png</iconY>
+			<iconL>./includes/buttons/snesalt/l.png</iconL>
+			<iconR>./includes/buttons/snesalt/r.png</iconR>
+			<iconStart>./includes/buttons/snesalt/start.png</iconStart>
+			<iconSelect>./includes/buttons/snesalt/select.png</iconSelect>
 		</helpsystem>		
 	</view>
 	

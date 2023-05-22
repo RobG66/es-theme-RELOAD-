@@ -4,17 +4,17 @@
 	<view name="menu, system, basic, detailed, video, grid, gamecarousel">
 		<helpsystem name="help">
 			<iconColor>FFFFFFFF</iconColor>
-			<iconUpDown>./inclues/buttons/psx/updown.png</iconUpDown>
-			<iconLeftRight>./inclues/buttons/psx/leftright.png</iconLeftRight>
-			<iconUpDownLeftRight>./inclues/buttons/psx/all.png</iconUpDownLeftRight>
-			<iconA>./inclues/buttons/psx/a.png</iconA>
-			<iconB>./inclues/buttons/psx/b.png</iconB>
-			<iconX>./inclues/buttons/psx/x.png</iconX>
-			<iconY>./inclues/buttons/psx/y.png</iconY>
-			<iconL>./inclues/buttons/psx/l.png</iconL>
-			<iconR>./inclues/buttons/psx/r.png</iconR>
-			<iconStart>./inclues/buttons/psx/start.png</iconStart>
-			<iconSelect>./inclues/buttons/psx/select.png</iconSelect>
+			<iconUpDown>./includes/buttons/psx/updown.png</iconUpDown>
+			<iconLeftRight>./includes/buttons/psx/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./includes/buttons/psx/all.png</iconUpDownLeftRight>
+			<iconA>./includes/buttons/psx/a.png</iconA>
+			<iconB>./includes/buttons/psx/b.png</iconB>
+			<iconX>./includes/buttons/psx/x.png</iconX>
+			<iconY>./includes/buttons/psx/y.png</iconY>
+			<iconL>./includes/buttons/psx/l.png</iconL>
+			<iconR>./includes/buttons/psx/r.png</iconR>
+			<iconStart>./includes/buttons/psx/start.png</iconStart>
+			<iconSelect>./includes/buttons/psx/select.png</iconSelect>
 		</helpsystem>		
 	</view>
 	

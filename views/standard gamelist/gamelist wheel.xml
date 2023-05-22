@@ -30,12 +30,12 @@
 </gamecarousel> 
 
 <image name="showlogo" extra="true">
-<pos ifSubset="Wheel Position:Right">0.63 0.075</pos>
-<pos ifSubset="Wheel Position:Left">0.36 0.075</pos>
+<pos ifSubset="Wheel Position:Right">0.615 0.075</pos>
+<pos ifSubset="Wheel Position:Left">0.38 0.075</pos>
 <origin>0.5 0.5</origin>
 <maxSize>0.22 .12</maxSize>
 <zIndex>12</zIndex>
-<path>./art/logos/clean/${system.theme}.png</path>
+<path>./art/logos/long/${system.theme}.png</path>
 <animation mode="linear" duration="4000" begin="1000" property="scale" repeat="forever" autoreverse="true" from="1.00" to="1.02"/>
 </image>
 

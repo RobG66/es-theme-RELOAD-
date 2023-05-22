@@ -4,17 +4,17 @@
 	<view name="menu, system, basic, detailed, video, grid, gamecarousel">
 		<helpsystem name="help">
 			<iconColor>FFFFFFFF</iconColor>
-			<iconUpDown>./inclues/buttons/xboxone/updown.png</iconUpDown>
-			<iconLeftRight>./inclues/buttons/xboxone/leftright.png</iconLeftRight>
-			<iconUpDownLeftRight>./inclues/buttons/xboxone/all.png</iconUpDownLeftRight>
-			<iconA>./inclues/buttons/xboxone/a.png</iconA>
-			<iconB>./inclues/buttons/xboxone/b.png</iconB>
-			<iconX>./inclues/buttons/xboxone/x.png</iconX>
-			<iconY>./inclues/buttons/xboxone/y.png</iconY>
-			<iconL>./inclues/buttons/xboxone/l.png</iconL>
-			<iconR>./inclues/buttons/xboxone/r.png</iconR>
-			<iconStart>./inclues/buttons/xboxone/start.png</iconStart>
-			<iconSelect>./inclues/buttons/xboxone/select.png</iconSelect>
+			<iconUpDown>./includes/buttons/xboxone/updown.png</iconUpDown>
+			<iconLeftRight>./includes/buttons/xboxone/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./includes/buttons/xboxone/all.png</iconUpDownLeftRight>
+			<iconA>./includes/buttons/xboxone/a.png</iconA>
+			<iconB>./includes/buttons/xboxone/b.png</iconB>
+			<iconX>./includes/buttons/xboxone/x.png</iconX>
+			<iconY>./includes/buttons/xboxone/y.png</iconY>
+			<iconL>./includes/buttons/xboxone/l.png</iconL>
+			<iconR>./includes/buttons/xboxone/r.png</iconR>
+			<iconStart>./includes/buttons/xboxone/start.png</iconStart>
+			<iconSelect>./includes/buttons/xboxone/select.png</iconSelect>
 		</helpsystem>		
 	</view>
 	
