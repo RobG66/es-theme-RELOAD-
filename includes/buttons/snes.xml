@@ -1,0 +1,21 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	
+	<view name="menu, system, basic, detailed, video, grid, gamecarousel">
+		<helpsystem name="help">
+			<iconColor>FFFFFFFF</iconColor>
+			<iconUpDown>./inclues/buttons/snes/updown.png</iconUpDown>
+			<iconLeftRight>./inclues/buttons/snes/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./inclues/buttons/snes/all.png</iconUpDownLeftRight>
+			<iconA>./inclues/buttons/snes/a.png</iconA>
+			<iconB>./inclues/buttons/snes/b.png</iconB>
+			<iconX>./inclues/buttons/snes/x.png</iconX>
+			<iconY>./inclues/buttons/snes/y.png</iconY>
+			<iconL>./inclues/buttons/snes/l.png</iconL>
+			<iconR>./inclues/buttons/snes/r.png</iconR>
+			<iconStart>./inclues/buttons/snes/start.png</iconStart>
+			<iconSelect>./inclues/buttons/snes/select.png</iconSelect>
+		</helpsystem>		
+	</view>
+	
+</theme>

@@ -134,7 +134,6 @@
 <subset name="Background" displayName="System Background Image">
 <include name="Videogames" displayName="Videogame Hardware">./includes/background/videogames.xml</include>
 <include name="Wallpapers" displayName="Fan Art Theme">./includes/background/fanart.xml</include>
-<include name="Random" displayName="Random Screenshot">./includes/background/random.xml</include>
 <include name="OFF" displayName="OFF"/>
 </subset>
 
@@ -264,15 +263,15 @@
 </subset>
 
 <subset name="Button Icons" displayName="Help Button Icons"> 
-<include subset="iconset" name="Default">./includes/icons/default.xml</include>
-<include subset="iconset" name="PSX">./includes/icons/psx.xml</include>
-<include subset="iconset" name="SNES">./includes/icons/snes.xml</include>
-<include subset="iconset" name="XBOX">./includes/icons/xbox.xml</include>
-<include subset="iconset" name="ARCADE">./includes/icons/arcade.xml</include>
-<include subset="iconset" name="Xbox One">./includes/icons/xboxone.xml</include>
-<include subset="iconset" name="Switch">./includes/icons/switch.xml</include>
-<include subset="iconset" name="PSX ALT">./includes/icons/psx1.xml</include>
-<include subset="iconset" name="SNES ALT">./includes/icons/snesalt.xml</include>
+<include subset="iconset" name="Default">./includes/buttons/default.xml</include>
+<include subset="iconset" name="PSX">./includes/buttons/psx.xml</include>
+<include subset="iconset" name="SNES">./includes/buttons/snes.xml</include>
+<include subset="iconset" name="XBOX">./includes/buttons/xbox.xml</include>
+<include subset="iconset" name="ARCADE">./includes/buttons/arcade.xml</include>
+<include subset="iconset" name="Xbox One">./includes/buttons/xboxone.xml</include>
+<include subset="iconset" name="Switch">./includes/buttons/switch.xml</include>
+<include subset="iconset" name="PSX ALT">./includes/buttons/psx1.xml</include>
+<include subset="iconset" name="SNES ALT">./includes/buttons/snesalt.xml</include>
 </subset>
 
 

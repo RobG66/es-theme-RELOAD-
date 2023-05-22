@@ -5,3 +5,8 @@
   There are brand new wheel views and art assets were updated as needed.    
 
 Credit: Rob Ganshorn
+
+RBHS Original Theme:
+Heder Broubous - Gamelist Basic - Detailed
+Fernando Caldas - Layout Menu
+

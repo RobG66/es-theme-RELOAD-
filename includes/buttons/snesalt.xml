@@ -1,0 +1,21 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	
+	<view name="menu, system, basic, detailed, video, grid, gamecarousel">
+		<helpsystem name="help">
+			<iconColor>FFFFFFFF</iconColor>
+			<iconUpDown>./inclues/buttons/snesalt/updown.png</iconUpDown>
+			<iconLeftRight>./inclues/buttons/snesalt/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./inclues/buttons/snesalt/all.png</iconUpDownLeftRight>
+			<iconA>./inclues/buttons/snesalt/a.png</iconA>
+			<iconB>./inclues/buttons/snesalt/b.png</iconB>
+			<iconX>./inclues/buttons/snesalt/x.png</iconX>
+			<iconY>./inclues/buttons/snesalt/y.png</iconY>
+			<iconL>./inclues/buttons/snesalt/l.png</iconL>
+			<iconR>./inclues/buttons/snesalt/r.png</iconR>
+			<iconStart>./inclues/buttons/snesalt/start.png</iconStart>
+			<iconSelect>./inclues/buttons/snesalt/select.png</iconSelect>
+		</helpsystem>		
+	</view>
+	
+</theme>
