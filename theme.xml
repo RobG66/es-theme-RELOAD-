@@ -123,6 +123,7 @@
 <include name="Rectangle" displayName="Rectangle">./includes/wheel/rectangle.xml</include>
 <include name="Long" displayName="Long">./includes/wheel/long.xml</include>
 <include name="Silver" displayName="Silver">./includes/wheel/silver.xml</include>
+<include name="Colorful" displayName="Colorful">./includes/wheel/colorful.xml</include>
 <!--<include name="Spiral" displayName="Spiral">./includes/wheel/spiral.xml</include>-->
 <!--<include name="Circular" displayName="Circular">./includes/wheel/circular.xml</include>-->
 </subset>
