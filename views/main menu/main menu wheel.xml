@@ -10,9 +10,10 @@
 <!---------------------------------------------------------------------->
 
 <carousel name="systemcarousel">
-<scrollSpeed>2.0</scrollSpeed>
+<scrollSpeed>5.0</scrollSpeed>
 <zIndex>10</zIndex>	   
 <origin>0 0</origin>   
+<maxLogoCount>10</maxLogoCount>
 <size>1 1</size>
 <type>vertical_wheel</type>
 <pos ifSubset="Wheel Position:Right">0.34 0</pos>
@@ -20,7 +21,6 @@
 <logoSize>0.15 0.250</logoSize>
 <logoScale>1.3</logoScale> 
 <color>00000000</color>
-<logoRotation>-12.5</logoRotation>
 <logoRotationOrigin ifSubset="Wheel Position:Right">4 0.5</logoRotationOrigin>
 <logoRotationOrigin ifSubset="Wheel Position:Left">-2.0 0.5</logoRotationOrigin>
 <logoRotation ifSubset="Wheel Position:Right">-10.5</logoRotation>
@@ -42,7 +42,8 @@
 <glowColor>000000</glowColor>
 <zIndex>6</zIndex>	  
 <storyboard>
-<animation property="opacity" from="0" to="1" begin="100" duration="500" mode="EaseOut"/>
+<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
 </storyboard>  
 </text>
 
@@ -100,7 +101,8 @@
 -->
 
 <image name="logotype" extra="true">
-<pos>0.50 0.10</pos>
+<pos ifSubset="Wheel Position:Right">0.37 0.1</pos>
+<pos ifSubset="Wheel Position:Left">0.63 0.1</pos>
 <origin>0.5 0.5</origin>
 <maxSize>0.250 0.14</maxSize>
 <path>./art/logos/clean/${system.theme}.png</path>
@@ -109,6 +111,8 @@
 <path>./art/logos/clean/${system.theme}.bmp</path>
 <zIndex>5</zIndex>
 <storyboard>
+<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
 <animation mode="easyIn" duration="2500" begin="1000" property="scale" repeat="forever" autoreverse="true" from="0.97" to="1"/>
 </storyboard>
 </image>
@@ -133,7 +137,17 @@
 <zIndex>4</zIndex>
 <rotation ifSubset="Wheel Position:Left">180</rotation>
 <rotation ifSubset="Wheel Position:Right">0</rotation>
+</image>
 
+
+<image name="swb3" ifSubset="Wheel Background:Bright" extra="true">
+<pos>0 0</pos>
+<size>1 1</size>
+<opacity>.9</opacity>
+<path>./art/wheel/bright.png</path>
+<zIndex>4</zIndex>
+<rotation ifSubset="Wheel Position:Left">180</rotation>
+<rotation ifSubset="Wheel Position:Right">0</rotation>
 </image>
 
 <!-- Since video was made larger, shadow does not fit anymore.

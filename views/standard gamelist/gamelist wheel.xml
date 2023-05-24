@@ -13,6 +13,7 @@
 <scrollSpeed>2.0</scrollSpeed>
 <zIndex>10</zIndex>	   
 <origin>0 0</origin>   
+<maxLogoCount>10</maxLogoCount>
 <size>1 1</size>
 <type>vertical_wheel</type>
 <pos ifSubset="Wheel Position:Right">0.34 0</pos>
@@ -36,6 +37,7 @@
 <maxSize>0.22 .12</maxSize>
 <zIndex>12</zIndex>
 <path>./art/logos/long/${system.theme}.png</path>
+<path>./art/logos/clean/${system.theme}.png</path>
 <animation mode="linear" duration="4000" begin="1000" property="scale" repeat="forever" autoreverse="true" from="1.00" to="1.02"/>
 </image>
 
@@ -81,6 +83,17 @@
 <flipX ifSubset="Wheel Position:Right">false</flipX>
 </image>
 
+
+<image name="swb3" ifSubset="Wheel Background:Bright" extra="true">
+<pos>0 0</pos>
+<size>1 1</size>
+<opacity>.9</opacity>
+<path>./art/wheel/bright.png</path>
+<zIndex>4</zIndex>
+<rotation ifSubset="Wheel Position:Left">180</rotation>
+<rotation ifSubset="Wheel Position:Right">0</rotation>
+</image>
+
 <image name="gamelist background" extra="true">
 <pos>0 0</pos>
 <size>1 1</size>
@@ -110,7 +123,6 @@
 <path>./art/video frames/default.png</path>
 <path>./art/video frames/${system.theme}.png</path>
 </image>
-
 
 <image name="console" extra="true">
 <path>./art/consoles/${system.theme}.png</path>
