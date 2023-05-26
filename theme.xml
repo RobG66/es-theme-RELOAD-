@@ -110,14 +110,14 @@
 <include name="OFF" displayName="OFF"/>
 </subset>
 
-<subset name="Logo Opacity" displayName="Wheel & Grid Logo Opacity">  
+<subset name="Logo Opacity" displayName="Logo Opacity">  
 <include name="100%" displayName="100%">./includes/logo opacity/100%.xml</include>
 <include name="75%" displayName="75%">./includes/logo opacity/75%.xml</include>
 <include name="50%" displayName="50%">./includes/logo opacity/50%.xml</include>
 <include name="25%" displayName="25%">./includes/logo opacity/25%.xml</include>
 </subset>
 
-<subset name="Logo Type" displayName="System View Logos">
+<subset name="Logo Type" displayName="Logo Style">
 <include name="Clean" displayName="Clean">./includes/wheel/clean.xml</include>
 <include name="Classic" displayName="Classic">./includes/wheel/classic.xml</include>
 <include name="Rectangle" displayName="Rectangle">./includes/wheel/rectangle.xml</include>
@@ -232,36 +232,6 @@
 <include name="BottomOnly" displayName="Bottom Only">./includes/frame/frame1.xml</include>
 <include name="AllAround" displayName="All Around">./includes/frame/frame2.xml</include>
 <include name="OFF" displayName="OFF"/>
-</subset>
-
-<subset name="Music" displayName="Music">
-<include name="Electronic" displayName="Electronic">./includes/music/electronic music.xml</include>
-<include name="Games" displayName="Games">./includes/music/game music.xml</include>
-</subset>
-
-<subset name="Sound" displayName="Sound"> 
-<include name="OFF" displayname="OFF">./includes/sound/off.xml</include>
-<include name="hyperspin" displayname="Hyperspin">./includes/sound/hyperspin.xml</include>
-<include name="roleta" displayname="Roleta">./includes/sound/roleta.xml</include>
-<include name="classic" displayname="Classic">./includes/sound/classic.xml</include>
-<include name="button" displayname="Button">./includes/sound/button.xml</include>
-<include name="cursor" displayname="Cursor">./includes/sound/cursor.xml</include>
-<include name="golf" displayname="Golf">./includes/sound/golf.xml</include>
-<include name="keiba" displayname="Keiba">./includes/sound/keiba.xml</include>
-<include name="mario" displayname="Mario">./includes/sound/mario.xml</include>
-<include name="message" displayname="Message">./includes/sound/message.xml</include>
-<include name="monopoly" displayname="Monopoly">./includes/sound/monopoly.xml</include>
-<include name="phone" displayname="Phone">./includes/sound/phone.xml</include>
-<include name="save" displayname="Save">./includes/sound/save.xml</include>
-<include name="slide" displayname="Slide">./includes/sound/slide.xml</include>
-<include name="spin" displayname="Spin">./includes/sound/spin.xml</include>
-<include name="yoshi" displayname="Yoshi">./includes/sound/yoshi.xml</include>
-<include name="moneda" displayname="Moneda">./includes/sound/yoshi2.xml</include>
-<include name="ring" displayname="Ring">./includes/sound/ring.xml</include>
-<include name="zumb" displayname="Zumb">./includes/sound/zumb.xml</include>
-<include name="tone" displayname="Tone">./includes/sound/tone.xml</include>
-<include name="giata" displayname="Giata">./includes/sound/giata.xml</include>
-<include name="scroll" displayname="Scroll">./includes/sound/scroll.xml</include>
 </subset>
 
 <subset name="Button Icons" displayName="Help Button Icons"> 

@@ -10,7 +10,7 @@
 <!----------------------------------------------------------->
 
 <gamecarousel name="gamecarousel">
-<scrollSpeed>2.0</scrollSpeed>
+<scrollSpeed>.05</scrollSpeed>
 <zIndex>10</zIndex>	   
 <origin>0 0</origin>   
 <maxLogoCount>10</maxLogoCount>
@@ -31,10 +31,10 @@
 </gamecarousel> 
 
 <image name="showlogo" extra="true">
-<pos ifSubset="Wheel Position:Right">0.615 0.075</pos>
-<pos ifSubset="Wheel Position:Left">0.38 0.075</pos>
+<pos ifSubset="Wheel Position:Right">0.610 0.075</pos>
+<pos ifSubset="Wheel Position:Left">0.375 0.075</pos>
 <origin>0.5 0.5</origin>
-<maxSize>0.22 .12</maxSize>
+<maxSize>0.20 .10</maxSize>
 <zIndex>12</zIndex>
 <path>./art/logos/long/${system.theme}.png</path>
 <path>./art/logos/clean/${system.theme}.png</path>
@@ -124,7 +124,7 @@
 <path>./art/video frames/${system.theme}.png</path>
 </image>
 
-<image name="console" extra="true">
+<image name="console" aspect="true" extra="true">
 <path>./art/consoles/${system.theme}.png</path>
 <pos ifSubset="Wheel Position:Right">0.13 0.80</pos>
 <pos ifSubset="Wheel Position:Left">0.88 0.80</pos>
@@ -220,8 +220,8 @@
 <pos ifSubset="Wheel Position:Right">0.63 0.81</pos>
 <pos ifSubset="Wheel Position:Left">0.41 0.81</pos>
 <maxSize>0.100 0.030</maxSize>
-<filledPath>./art/other icons/star_filled.png</filledPath>
-<unfilledPath>./art/other icons/star_empty.png</unfilledPath>	
+<filledPath>./art/icons/star_filled.png</filledPath>
+<unfilledPath>./art/icons/star_empty.png</unfilledPath>	
 <zIndex>15</zIndex>
 </rating>	 
 
@@ -234,6 +234,7 @@
 <zIndex>999</zIndex>
 </image>
 
+
 <!--  Favorite Icons -->	
 <image name="md_notfavorite" extra="true">
 <origin>0 0</origin>
@@ -241,7 +242,7 @@
 <pos ifSubset="Wheel Position:Left">0.32 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
 <color>80808090</color>
-<path>./art/other icons/favorite.png</path>
+<path>./art/icons/favorite.png</path>
 <zIndex>999</zIndex>
 </image> 
 
@@ -250,7 +251,7 @@
 <pos ifSubset="Wheel Position:Right">0.58 0.165</pos>
 <pos ifSubset="Wheel Position:Left">0.32 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
-<path>./art/other icons/favorite.png</path>
+<path>./art/icons/favorite.png</path>
 <zIndex>999</zIndex>
 <color>dddddd</color>
 </image> 
@@ -262,7 +263,7 @@
 <pos ifSubset="Wheel Position:Right">0.60 0.165</pos>
 <pos ifSubset="Wheel Position:Left">0.34 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
-<path>./art/other icons/savestate.png</path>
+<path>./art/icons/savestate.png</path>
 <color>80808090</color>
 <zIndex>150</zIndex>
 </image>
@@ -272,7 +273,7 @@
 <pos ifSubset="Wheel Position:Right">0.60 0.165</pos>
 <pos ifSubset="Wheel Position:Left">0.34 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
-<path>./art/other icons/savestate.png</path>
+<path>./art/icons/savestate.png</path>
 <color>dddddd</color>
 <zIndex>150</zIndex>
 </image>
@@ -284,7 +285,7 @@
 <pos ifSubset="Wheel Position:Right">0.622 0.165</pos>
 <pos ifSubset="Wheel Position:Left">0.362 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
-<path>./art/other icons/cheevos.png</path>
+<path>./art/icons/cheevos.png</path>
 <color>80808090</color>
 <zIndex>150</zIndex>
 <linearSmooth>true</linearSmooth>
@@ -295,7 +296,7 @@
 <pos ifSubset="Wheel Position:Right">0.622 0.165</pos>
 <pos ifSubset="Wheel Position:Left">0.362 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
-<path>./art/other icons/cheevos.png</path>
+<path>./art/icons/cheevos.png</path>
 <color>dddddd</color>
 <zIndex>150</zIndex>
 <linearSmooth>true</linearSmooth>
@@ -308,7 +309,7 @@
 <pos ifSubset="Wheel Position:Right">0.645 0.165</pos>
 <pos ifSubset="Wheel Position:Left">0.385 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
-<path>./art/other icons/manual.png</path>
+<path>./art/icons/manual.png</path>
 <color>80808090</color>
 </image>
 
@@ -317,7 +318,7 @@
 <pos ifSubset="Wheel Position:Right">0.645 0.165</pos>
 <pos ifSubset="Wheel Position:Left">0.385 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
-<path>./art/other icons/manual.png</path>
+<path>./art/icons/manual.png</path>
 <color>dddddd</color>
 </image>
 		
@@ -327,7 +328,7 @@
 <pos ifSubset="Wheel Position:Right">0.670 0.165</pos>
 <pos ifSubset="Wheel Position:Left">0.405 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
-<path>./art/other icons/map.png</path>
+<path>./art/icons/map.png</path>
 <color>80808090</color>
 </image>
 
@@ -336,7 +337,7 @@
 <pos ifSubset="Wheel Position:Right">0.670 0.165</pos>
 <pos ifSubset="Wheel Position:Left">0.405 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
-<path>./art/other icons/map.png</path>
+<path>./art/icons/map.png</path>
 <color>dddddd</color>
 </image>
 
@@ -346,7 +347,7 @@
 <pos ifSubset="Wheel Position:Right">0.695 0.165</pos>
 <pos ifSubset="Wheel Position:Left">0.430 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
-<path>./art/other icons/kid.png</path>
+<path>./art/icons/kid.png</path>
 <color>80808090</color>
 <zIndex>100</zIndex>
 <linearSmooth>true</linearSmooth>
@@ -357,7 +358,7 @@
 <pos ifSubset="Wheel Position:Right">0.695 0.165</pos>
 <pos ifSubset="Wheel Position:Left">0.430 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
-<path>./art/other icons/kid.png</path>
+<path>./art/icons/kid.png</path>
 <color>dddddd</color>
 <zIndex>100</zIndex>
 <linearSmooth>true</linearSmooth>
