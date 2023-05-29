@@ -140,8 +140,9 @@
 </subset>
 
 <subset name="Video" displayName="System Video">
-<include name="ON" displayName="ON"/>
-<include name="OFF" displayName="OFF"/>
+<include name="Large" displayName="Large Size">./includes/video/large.xml</include>
+<include name="Reduced" displayName="Small Size">./includes/video/small.xml</include>
+<include name="OFF" displayName="OFF">./includes/video/off.xml</include>
 </subset>
 
 <subset name="Wheel Extra" displayName="Wheel Gamelist Box or Character Art">

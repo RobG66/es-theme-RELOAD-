@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+<formatVersion>7</formatVersion>
+
+<view name="system">
+
+<video name="background_video" extra="true">
+<visible>false</visible>
+</video>
+
+<image name="video_border" extra="true">
+<visible>false</visible>
+</image>
+
+<video name="reduced_video" extra="true">
+<visible>true</visible>
+</video>
+
+
+<image name="reduced_background_shadow" extra="true">
+<visible>true</visible>
+</image>
+
+</view>
+ 
+</theme>
