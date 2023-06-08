@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+
+<formatVersion>7</formatVersion>
+
+<view name="system">
+
+<!---------------------------------------------------------------------->
+<!-------------------------------- CAROUSEL ---------------------------->
+<!---------------------------------------------------------------------->
+
+<carousel name="systemcarousel">
+<type>grid</type>
+<pos ifSubset="Logo Type:Classic">0 0.28001</pos>
+<pos ifSubset="Logo Type:Clean">0 0.286</pos>
+<pos ifSubset="Logo Type:Spiral">0 0.28</pos>
+<pos ifSubset="Logo Type:Rectangle">0 0.28</pos>
+<pos ifSubset="Logo Type:Long">0 0.28</pos>
+<pos ifSubset="Logo Type:Silver">0 0.2801</pos>
+<pos ifSubset="Logo Type:Circular">0 0.275</pos>
+<size>1 1</size>
+<zIndex>50</zIndex>         
+<logoScale ifSubset="Logo Type:Classic">1.30</logoScale> 
+<logoScale ifSubset="Logo Type:Clean">1.20</logoScale> 
+<logoScale ifSubset="Logo Type:Spiral">1.30</logoScale> 
+<logoScale ifSubset="Logo Type:Rectangle">1.30</logoScale>
+<logoScale ifSubset="Logo Type:Long">1.30</logoScale> 
+<logoScale ifSubset="Logo Type:Silver">1.2</logoScale> 
+<logoScale ifSubset="Logo Type:Circular">1.30</logoScale> 
+<logoSize ifSubset="Logo Type:Classic">0.125 0.25</logoSize>
+<logomaxSize ifSubset="Logo Type:Clean">0.25 0.25</logomaxSize>
+<logoSize ifSubset="Logo Type:Spiral">0.125 0.25</logoSize>
+<logoSize ifSubset="Logo Type:Rectangle">0.17 0.30</logoSize>
+<logoSize ifSubset="Logo Type:Long">0.25 0.35</logoSize>
+<logoSize ifSubset="Logo Type:Silver">0.15 0.28</logoSize>
+<logoSize ifSubset="Logo Type:Circular">0.13 0.30</logoSize>
+<color>00000000</color>
+<logoAlignment>center</logoAlignment>
+<maxLogoCount ifSubset="Logo Type:Classic">7</maxLogoCount>
+<maxLogoCount ifSubset="Logo Type:Clean">3</maxLogoCount>
+<maxLogoCount ifSubset="Logo Type:Spiral">7</maxLogoCount>
+<maxLogoCount ifSubset="Logo Type:Rectangle">5</maxLogoCount>
+<maxLogoCount ifSubset="Logo Type:Long">3</maxLogoCount>
+<maxLogoCount ifSubset="Logo Type:Silver">5</maxLogoCount>
+<maxLogoCount ifSubset="Logo Type:Circular">7</maxLogoCount>
+</carousel>
+
+
+<!---------------------------------------------------------------------->
+<!------------------------------ HELP / INFO --------------------------->
+<!---------------------------------------------------------------------->
+
+<text name="systemInfo">
+<pos>0.16 0.199</pos>
+<origin>0.5 0.5</origin>
+<backgroundColor>00000000</backgroundColor>
+<color>ffffff</color>
+<glowColor>000000</glowColor>
+<rotation>-4.5</rotation> 
+<zIndex>9</zIndex>	  
+<storyboard>
+<animation property="opacity" from="0" to="1" begin="100" duration="100" mode="EaseOut"/>
+<animation property="y" from="0.14" begin="100" duration="400" mode="linear"/>
+</storyboard>  
+</text> 
+
+<helpsystem name="help">
+<pos>0 0.97</pos>    
+<textColor>ffffff</textColor>
+<iconColor>ffffff</iconColor>
+</helpsystem>
+
+<!--------------------------------------------------------------->
+<!-------------------------- SYSTEM ART ------------------------->
+<!--------------------------------------------------------------->
+
+<image name="controls" extra="true">
+<pos>0.87 0.438</pos>
+<origin>0.5 0.5</origin>
+<maxSize>0.2 0.2</maxSize>
+<path>./art/controls/${system.theme}.png</path>
+<path>./art/controls/${system.theme}.jpg</path>
+<path>./art/controls/${system.theme}.wepp</path>
+<path>./art/controls/${system.theme}.bmp</path>
+<zIndex>5</zIndex>
+<storyboard>
+<animation property="x" from="1" begin="0" duration="1000" mode="linear"/>
+</storyboard>  
+</image>
+
+<video name="background_video" extra="true" ifSubset="Video:ON">
+<pos>0.5 0.5</pos>
+<origin>0.5 0.5</origin>
+<size>1 1</size>
+<delay>2</delay>
+<path>./videos/${system.theme}.mp4</path>
+<path>./videos/${system.theme}.flv</path>
+<path>./videos/${system.theme}.avi</path>
+<path>{random}</path>
+<zIndex>2</zIndex>
+<storyboard>
+<animation property="scale" from="0.9" to="1" begin="0" duration="600" mode="linear"/>
+</storyboard>  
+</video>
+
+<image name="logotype2" extra="true">
+<pos>0.90 0.15</pos>
+<origin>0.5 0.5</origin>
+<maxSize>0.2 0.2</maxSize>
+<path>./art/logos/circular/${system.theme}.png</path>
+<path>./art/logos/circular/${system.theme}.jpg</path>
+<path>./art/logos/circular/${system.theme}.webp</path>
+<path>./art/logos/circular/${system.theme}.bmp</path>
+<zIndex>6</zIndex>
+<storyboard>
+<animation property="y" from="0" begin="0" duration="1000" mode="linear"/>
+<animation mode="easyIn" duration="2500" begin="1000" property="scale" repeat="forever" autoreverse="true" from="1.00" to="1.02"/>
+</storyboard>  
+</image>
+
+<image name="characters" extra="true">
+<pos>0.12 0.438</pos>
+<origin>0.5 0.5</origin>
+<maxSize>0.35 0.35</maxSize>
+<path>./art/characters/default.png</path>
+<path>./art/characters/${system.theme}.png</path>
+<path>./art/characters/${system.theme}.jpg</path>
+<path>./art/characters/${system.theme}.webp</path>
+<path>./art/characters/${system.theme}.bmp</path>
+<zIndex>7</zIndex>
+<storyboard>
+<animation property="x" from="0" begin="0" duration="1000" mode="linear"/>
+</storyboard>  
+</image>
+
+<image name="logotype" extra="true">
+<pos>0.16 0.085</pos>
+<origin>0.5 0.5</origin>
+<maxSize>0.2 0.2</maxSize>
+<path>./art/logos/clean/${system.theme}.png</path>
+<path>./art/logos/clean/${system.theme}.jpg</path>
+<path>./art/logos/clean/${system.theme}.webp</path>
+<path>./art/logos/clean/${system.theme}.bmp</path>
+<zIndex>8</zIndex>
+</image>
+
+
+<!-------------------------------------------------------------------->
+<!------------------------------ FIXED ART --------------------------->
+<!-------------------------------------------------------------------->
+
+<image name="grid background" extra="true">
+<pos>0 0</pos>
+<size>1 1</size>
+<path>./art/grid/background.png</path>
+<zIndex>3</zIndex>
+</image>
+
+<image name="selector" extra="true">
+<visible ifSubset="Logo Type:Classic">false</visible>
+<visible ifSubset="Logo Type:Clean">true</visible>
+<visible ifSubset="Logo Type:Spiral">false</visible>
+<visible ifSubset="Logo Type:Rectangle">true</visible>
+<visible ifSubset="Logo Type:Silver">true</visible>
+<visible ifSubset="Logo Type:Circular">false</visible>
+<pos>0 0</pos>
+<size>1 1</size>
+<path>./art/grid/selector.png</path>
+<zIndex>4</zIndex>
+</image>
+
+</view>
+ 
+</theme>

@@ -129,8 +129,8 @@
 </subset>
 
 <subset name="Main Menu" displayName="System View Style">
-<include name="Main Menu Wheel" displayName="Vertical Wheel">./views/main menu/main menu wheel.xml</include>
-<include name="Main Menu Grid" displayName="Horizontal Grid">./views/main menu/main menu grid.xml</include>
+<include name="Main Menu Wheel" displayName="Vertical Wheel">./views/system/wheel.xml</include>
+<include name="Main Menu Grid" displayName="Horizontal Grid">./views/system/grid.xml</include>
 </subset>
 
 <subset name="Background" displayName="System Background Image">
@@ -253,10 +253,10 @@
 <!-------------------- GAMELIST ----------------------->
 <!----------------------------------------------------->
 
-<include name="gamecarousel">./views/standard gamelist/gamelist wheel.xml</include>
-<include name="basic">./views/standard gamelist/gamelist basic.xml</include>
-<include name="detailed">./views/standard gamelist/gamelist detailed.xml</include>
-<include name="grid">./views/standard gamelist/gamelist grid.xml</include>
-<include name="video">./views/standard gamelist/gamelist video.xml</include>
-<include name="Gamecarousel Detailed">./views/standard gamelist/gamelist wheel detailed.xml</include>
+<include name="gamecarousel">./views/gamelist/wheel.xml</include>
+<include name="basic">./views/gamelist/basic.xml</include>
+<include name="detailed">./views/gamelist/detailed.xml</include>
+<include name="grid">./views/gamelist/grid.xml</include>
+<include name="video">./views/gamelist/video.xml</include>
+<include name="Gamecarousel Detailed">./views/gamelist/wheel detailed.xml</include>
 </theme>
