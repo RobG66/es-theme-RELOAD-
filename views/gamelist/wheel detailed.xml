@@ -11,7 +11,7 @@
 <image name="icon_background_big" extra="true">
 <path>./art/gamelist/icon_background_detailed.png</path>
 <pos ifSubset="Wheel Position:Right">0.612 0.36</pos>
-<pos ifSubset="Wheel Position:Left">0.382 0.36</pos>
+<pos ifSubset="Wheel Position:Left">0.387 0.36</pos>
 <origin>0.5 0.5</origin>
 <maxSize>0.56 0.46</maxSize>
 <zIndex>13</zIndex>
@@ -20,7 +20,7 @@
 <image name="icon_background_big_blackframe" extra="true">
 <path>./art/gamelist/icon_background_detailed_blackframe.png</path>
 <pos ifSubset="Wheel Position:Right">0.612 0.36</pos>
-<pos ifSubset="Wheel Position:Left">0.382 0.36</pos>
+<pos ifSubset="Wheel Position:Left">0.387 0.36</pos>
 <origin>0.5 0.5</origin>
 <maxSize>0.56 0.46</maxSize>
 <zIndex>12</zIndex>
@@ -66,7 +66,7 @@
 <image name="md_flag">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.525 0.177</pos>
-<pos ifSubset="Wheel Position:Left">0.293 0.177</pos>
+<pos ifSubset="Wheel Position:Left">0.298 0.177</pos>
 <maxSize>0.030 0.030</maxSize>
 <zIndex>999</zIndex>
 </image>
@@ -75,7 +75,7 @@
 <image name="md_notfavorite" extra="true">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.555 0.175</pos>
-<pos ifSubset="Wheel Position:Left">0.323 0.175</pos>
+<pos ifSubset="Wheel Position:Left">0.328 0.175</pos>
 <maxSize>0.035 0.035</maxSize>
 <color>80808090</color>
 <path>./art/icons/favorite.png</path>
@@ -85,7 +85,7 @@
 <image name="md_favorite">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.555 0.175</pos>
-<pos ifSubset="Wheel Position:Left">0.323 0.175</pos>
+<pos ifSubset="Wheel Position:Left">0.328 0.175</pos>
 <maxSize>0.035 0.035</maxSize>
 <path>./art/icons/favorite.png</path>
 <zIndex>999</zIndex>
@@ -97,7 +97,7 @@
 <image name="md_nosavestate" extra="true">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.579 0.175</pos>
-<pos ifSubset="Wheel Position:Left">0.348 0.175</pos>
+<pos ifSubset="Wheel Position:Left">0.353 0.175</pos>
 <maxSize>0.035 0.035</maxSize>
 <path>./art/icons/savestate.png</path>
 <color>80808090</color>
@@ -107,7 +107,7 @@
 <image name="md_savestate">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.579 0.175</pos>
-<pos ifSubset="Wheel Position:Left">0.348 0.175</pos>
+<pos ifSubset="Wheel Position:Left">0.353 0.175</pos>
 <maxSize>0.035 0.035</maxSize>
 <path>./art/icons/savestate.png</path>
 <color>dddddd</color>
@@ -119,7 +119,7 @@
 <image name="md_notcheevos" extra="true">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.606 0.175</pos>
-<pos ifSubset="Wheel Position:Left">0.375 0.175</pos>
+<pos ifSubset="Wheel Position:Left">0.380 0.175</pos>
 <maxSize>0.035 0.035</maxSize>
 <path>./art/icons/cheevos.png</path>
 <color>80808090</color>
@@ -130,7 +130,7 @@
 <image name="md_cheevos">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.606 0.175</pos>
-<pos ifSubset="Wheel Position:Left">0.375 0.175</pos>
+<pos ifSubset="Wheel Position:Left">0.380 0.175</pos>
 <maxSize>0.035 0.035</maxSize>
 <path>./art/icons/cheevos.png</path>
 <color>dddddd</color>
@@ -143,7 +143,7 @@
 <image name="md_nomanual" extra="true">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.632 0.175</pos>
-<pos ifSubset="Wheel Position:Left">0.400 0.175</pos>
+<pos ifSubset="Wheel Position:Left">0.405 0.175</pos>
 <maxSize>0.035 0.035</maxSize>
 <path>./art/icons/manual.png</path>
 <color>80808090</color>
@@ -152,7 +152,7 @@
 <image name="md_manual">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.632 0.175</pos>
-<pos ifSubset="Wheel Position:Left">0.400 0.175</pos>
+<pos ifSubset="Wheel Position:Left">0.405 0.175</pos>
 <maxSize>0.035 0.035</maxSize>
 <path>./art/icons/manual.png</path>
 <color>dddddd</color>
@@ -162,7 +162,7 @@
 <image name="md_nomap" extra="true">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.659 0.175</pos>
-<pos ifSubset="Wheel Position:Left">0.427 0.175</pos>
+<pos ifSubset="Wheel Position:Left">0.432 0.175</pos>
 <maxSize>0.035 0.035</maxSize>
 <path>./art/icons/map.png</path>
 <color>80808090</color>
@@ -171,7 +171,7 @@
 <image name="md_map">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.659 0.175</pos>
-<pos ifSubset="Wheel Position:Left">0.427 0.175</pos>
+<pos ifSubset="Wheel Position:Left">0.432 0.175</pos>
 <maxSize>0.035 0.035</maxSize>
 <path>./art/icons/map.png</path>
 <color>dddddd</color>
@@ -181,7 +181,7 @@
 <image name="md_notkidgame" extra="true"> 
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.684 0.175</pos>
-<pos ifSubset="Wheel Position:Left">0.455 0.175</pos>
+<pos ifSubset="Wheel Position:Left">0.460 0.175</pos>
 <maxSize>0.035 0.035</maxSize>
 <path>./art/icons/kid.png</path>
 <color>80808090</color>
@@ -192,7 +192,7 @@
 <image name="md_kidgame"> 
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.684 0.175</pos>
-<pos ifSubset="Wheel Position:Left">0.455 0.175</pos>
+<pos ifSubset="Wheel Position:Left">0.460 0.175</pos>
 <maxSize>0.035 0.035</maxSize>
 <path>./art/icons/kid.png</path>
 <color>dddddd</color>
@@ -211,7 +211,7 @@
 <text name="md_lbl_publisher">
 <visible>true</visible>
 <pos ifSubset="Wheel Position:Right">0.522 0.215</pos>
-<pos ifSubset="Wheel Position:Left">0.291 0.215</pos>
+<pos ifSubset="Wheel Position:Left">0.296 0.215</pos>
 <size>0.15 0.035</size>
 <zIndex>15</zIndex>     
 </text>
@@ -220,7 +220,7 @@
 <text name="md_publisher">
 <visible>true</visible>
 <pos ifSubset="Wheel Position:Right">0.616 0.215</pos>
-<pos ifSubset="Wheel Position:Left">0.380 0.215</pos>
+<pos ifSubset="Wheel Position:Left">0.385 0.215</pos>
 <size>0.09 0.035</size>
 <color>ffffff</color>
 <zIndex>15</zIndex>   
@@ -230,7 +230,7 @@
 <text name="md_lbl_developer">
 <visible>true</visible>
 <pos ifSubset="Wheel Position:Right">0.522 0.250</pos>
-<pos ifSubset="Wheel Position:Left">0.291 0.250</pos>
+<pos ifSubset="Wheel Position:Left">0.296 0.250</pos>
 <size>0.15 0.035</size>
 <zIndex>15</zIndex>        
 </text>
@@ -239,7 +239,7 @@
 <text name="md_developer">
 <visible>true</visible>
 <pos ifSubset="Wheel Position:Right">0.616 0.250</pos>
-<pos ifSubset="Wheel Position:Left">0.380 0.250</pos>
+<pos ifSubset="Wheel Position:Left">0.385 0.250</pos>
 <size>0.09 0.035</size>
 <color>ffffff</color>
 <zIndex>15</zIndex>	
@@ -249,7 +249,7 @@
 <text name="md_lbl_releasedate">
 <visible>true</visible>
 <pos ifSubset="Wheel Position:Right">0.522 0.285</pos>
-<pos ifSubset="Wheel Position:Left">0.291 0.285</pos>
+<pos ifSubset="Wheel Position:Left">0.296 0.285</pos>
 <size>0.15 0.035</size>
 <zIndex>15</zIndex> 
 </text>
@@ -258,7 +258,7 @@
 <datetime name="md_releasedate">
 <visible>true</visible>
 <pos ifSubset="Wheel Position:Right">0.616 0.285</pos>
-<pos ifSubset="Wheel Position:Left">0.380 0.285</pos>
+<pos ifSubset="Wheel Position:Left">0.385 0.285</pos>
 <size>0.15 0.035</size>
 <color>ffffff</color>
 <zIndex>15</zIndex>
@@ -269,7 +269,7 @@
 <text name="md_lbl_genre">
 <visible>true</visible>
 <pos ifSubset="Wheel Position:Right">0.522 0.320</pos>
-<pos ifSubset="Wheel Position:Left">0.291 0.320</pos>
+<pos ifSubset="Wheel Position:Left">0.296 0.320</pos>
 <size>0.15 0.035</size>
 <zIndex>15</zIndex>  
 </text>
@@ -278,7 +278,7 @@
 <text name="md_genre">
 <visible>true</visible>
 <pos ifSubset="Wheel Position:Right">0.616 0.320</pos>
-<pos ifSubset="Wheel Position:Left">0.380 0.320</pos>
+<pos ifSubset="Wheel Position:Left">0.385 0.320</pos>
 <size>0.09 0.035</size>
 <color>ffffff</color>
 <zIndex>15</zIndex> 
@@ -288,7 +288,7 @@
 <text name="md_lbl_players">
 <visible>true</visible>
 <pos ifSubset="Wheel Position:Right">0.522 0.355</pos>
-<pos ifSubset="Wheel Position:Left">0.291 0.355</pos>
+<pos ifSubset="Wheel Position:Left">0.296 0.355</pos>
 <size>0.15 0.035</size>
 <zIndex>15</zIndex>    
 </text>
@@ -297,7 +297,7 @@
 <text name="md_players">
 <visible>true</visible>
 <pos ifSubset="Wheel Position:Right">0.616 0.355</pos>
-<pos ifSubset="Wheel Position:Left">0.380 0.355</pos>
+<pos ifSubset="Wheel Position:Left">0.385 0.355</pos>
 <size>0.15 0.035</size>
 <color>ffffff</color>
 <zIndex>15</zIndex>     
@@ -307,7 +307,7 @@
 <text name="md_lbl_playcount">
 <visible>true</visible>
 <pos ifSubset="Wheel Position:Right">0.522 0.390</pos>
-<pos ifSubset="Wheel Position:Left">0.291 0.390</pos>
+<pos ifSubset="Wheel Position:Left">0.296 0.390</pos>
 <size>0.15 0.035</size>
 <zIndex>15</zIndex>  
 </text>
@@ -316,7 +316,7 @@
 <text name="md_playcount">
 <visible>true</visible>
 <pos ifSubset="Wheel Position:Right">0.616 0.390</pos>
-<pos ifSubset="Wheel Position:Left">0.380 0.390</pos>
+<pos ifSubset="Wheel Position:Left">0.385 0.390</pos>
 <size>0.15 0.035</size>
 <color>ffffff</color>
 <zIndex>15</zIndex>  
@@ -326,7 +326,7 @@
 <text name="md_lbl_lastplayed">
 <visible>true</visible>
 <pos ifSubset="Wheel Position:Right">0.522 0.425</pos>
-<pos ifSubset="Wheel Position:Left">0.291 0.425</pos>
+<pos ifSubset="Wheel Position:Left">0.296 0.425</pos>
 <size>0.15 0.035</size>
 <zIndex>15</zIndex>  
 </text>
@@ -335,7 +335,7 @@
 <datetime name="md_lastplayed">
 <visible>true</visible>
 <pos ifSubset="Wheel Position:Right">0.616 0.425</pos>
-<pos ifSubset="Wheel Position:Left">0.380 0.425</pos>
+<pos ifSubset="Wheel Position:Left">0.385 0.425</pos>
 <size>0.15 0.035</size>
 <color>ffffff</color>
 <zIndex>15</zIndex>        
@@ -345,7 +345,7 @@
 <text name="md_lbl_gametime">
 <visible>true</visible>
 <pos ifSubset="Wheel Position:Right">0.522 0.460</pos>
-<pos ifSubset="Wheel Position:Left">0.291 0.460</pos>
+<pos ifSubset="Wheel Position:Left">0.296 0.460</pos>
 <size>0.15 0.035</size>
 <zIndex>15</zIndex>    
 </text>
@@ -354,7 +354,7 @@
 <text name="md_gametime">
 <visible>true</visible>
 <pos ifSubset="Wheel Position:Right">0.616 0.460</pos>
-<pos ifSubset="Wheel Position:Left">0.380 0.460</pos>
+<pos ifSubset="Wheel Position:Left">0.385 0.460</pos>
 <size>0.15 0.035</size>
 <color>ffffff</color>
 <zIndex>15</zIndex>      
@@ -364,7 +364,7 @@
 <rating name="md_rating">
 <visible>true</visible>      
 <pos ifSubset="Wheel Position:Right">0.64 0.52</pos>
-<pos ifSubset="Wheel Position:Left">0.41 0.52</pos>
+<pos ifSubset="Wheel Position:Left">0.415 0.52</pos>
 <size>0.15 0.035</size>
 <maxSize>0.100 0.030</maxSize>
 <filledPath>./art/icons/star_filled.png</filledPath>

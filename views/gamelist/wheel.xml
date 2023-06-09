@@ -32,7 +32,7 @@
 
 <image name="showlogo" extra="true">
 <pos ifSubset="Wheel Position:Right">0.610 0.075</pos>
-<pos ifSubset="Wheel Position:Left">0.375 0.075</pos>
+<pos ifSubset="Wheel Position:Left">0.385 0.075</pos>
 <origin>0.5 0.5</origin>
 <maxSize>0.20 .10</maxSize>
 <zIndex>22</zIndex>
@@ -145,7 +145,7 @@
 
 <image name="icon_background_small" extra="true">
 <pos ifSubset="Wheel Position:Right">0.61 0.18</pos>
-<pos ifSubset="Wheel Position:Left">0.375 0.18</pos>
+<pos ifSubset="Wheel Position:Left">0.385 0.18</pos>
 <path>./art/gamelist/icon_background.png</path>
 <origin>0.5 0.5</origin>
 <maxSize>0.18 .10</maxSize>
@@ -228,7 +228,7 @@
 <!-- Regional Flag -->
 <image name="md_flag">
 <pos ifSubset="Wheel Position:Right">0.53 0.165</pos>
-<pos ifSubset="Wheel Position:Left">0.295 0.165</pos>
+<pos ifSubset="Wheel Position:Left">0.305 0.165</pos>
 <origin>0 0</origin>
 <maxSize>0.03 0.03</maxSize>
 <zIndex>999</zIndex>
@@ -239,7 +239,7 @@
 <image name="md_notfavorite" extra="true">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.56 0.165</pos>
-<pos ifSubset="Wheel Position:Left">0.325 0.165</pos>
+<pos ifSubset="Wheel Position:Left">0.335 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
 <color>80808090</color>
 <path>./art/icons/favorite.png</path>
@@ -249,7 +249,7 @@
 <image name="md_favorite">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.56 0.165</pos>
-<pos ifSubset="Wheel Position:Left">0.325 0.165</pos>
+<pos ifSubset="Wheel Position:Left">0.335 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
 <path>./art/icons/favorite.png</path>
 <zIndex>999</zIndex>
@@ -261,7 +261,7 @@
 <image name="md_nosavestate" extra="true">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.58 0.165</pos>
-<pos ifSubset="Wheel Position:Left">0.345 0.165</pos>
+<pos ifSubset="Wheel Position:Left">0.355 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
 <path>./art/icons/savestate.png</path>
 <color>80808090</color>
@@ -271,7 +271,7 @@
 <image name="md_savestate">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.58 0.165</pos>
-<pos ifSubset="Wheel Position:Left">0.345 0.165</pos>
+<pos ifSubset="Wheel Position:Left">0.355 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
 <path>./art/icons/savestate.png</path>
 <color>dddddd</color>
@@ -283,7 +283,7 @@
 <image name="md_notcheevos" extra="true">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.602 0.165</pos>
-<pos ifSubset="Wheel Position:Left">0.367 0.165</pos>
+<pos ifSubset="Wheel Position:Left">0.377 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
 <path>./art/icons/cheevos.png</path>
 <color>80808090</color>
@@ -294,7 +294,7 @@
 <image name="md_cheevos">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.602 0.165</pos>
-<pos ifSubset="Wheel Position:Left">0.367 0.165</pos>
+<pos ifSubset="Wheel Position:Left">0.377 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
 <path>./art/icons/cheevos.png</path>
 <color>dddddd</color>
@@ -307,7 +307,7 @@
 <image name="md_nomanual" extra="true">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.625 0.165</pos>
-<pos ifSubset="Wheel Position:Left">0.390 0.165</pos>
+<pos ifSubset="Wheel Position:Left">0.400 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
 <path>./art/icons/manual.png</path>
 <color>80808090</color>
@@ -316,7 +316,7 @@
 <image name="md_manual">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.625 0.165</pos>
-<pos ifSubset="Wheel Position:Left">0.390 0.165</pos>
+<pos ifSubset="Wheel Position:Left">0.400 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
 <path>./art/icons/manual.png</path>
 <color>dddddd</color>
@@ -326,7 +326,7 @@
 <image name="md_nomap" extra="true">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.650 0.165</pos>
-<pos ifSubset="Wheel Position:Left">0.410 0.165</pos>
+<pos ifSubset="Wheel Position:Left">0.420 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
 <path>./art/icons/map.png</path>
 <color>80808090</color>
@@ -335,7 +335,7 @@
 <image name="md_map">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.650 0.165</pos>
-<pos ifSubset="Wheel Position:Left">0.410 0.165</pos>
+<pos ifSubset="Wheel Position:Left">0.420 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
 <path>./art/icons/map.png</path>
 <color>dddddd</color>
@@ -345,7 +345,7 @@
 <image name="md_notkidgame" extra="true"> 
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.675 0.165</pos>
-<pos ifSubset="Wheel Position:Left">0.435 0.165</pos>
+<pos ifSubset="Wheel Position:Left">0.445 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
 <path>./art/icons/kid.png</path>
 <color>80808090</color>
@@ -356,7 +356,7 @@
 <image name="md_kidgame"> 
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.675 0.165</pos>
-<pos ifSubset="Wheel Position:Left">0.435 0.165</pos>
+<pos ifSubset="Wheel Position:Left">0.445 0.165</pos>
 <maxSize>0.03 0.03</maxSize>
 <path>./art/icons/kid.png</path>
 <color>dddddd</color>
