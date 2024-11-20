@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<theme defaultView="detailed">
+<theme defaultView="Gamecarousel Detailed">
 <formatVersion>7</formatVersion>
-
-<!---------------------------------------------------------------------->
-<!------------------------------- SCREEN ------------------------------->
-<!---------------------------------------------------------------------->
 
 <view name="screen">
 
@@ -44,10 +40,6 @@
 <size>0.07 0.07</size>
 </batteryIndicator>
 </view>
-
-<!---------------------------------------------------------------------->
-<!-------------------------------- MENU -------------------------------->
-<!---------------------------------------------------------------------->
 
 <view name="menu">
 <menuText name="menutitle">
@@ -93,11 +85,6 @@
 </menuTextEdit>
 </view>
  
-<!-------------------------------------------------------------------->
-<!-------------------------- MENU OPTIONS ---------------------------->
-<!-------------------------------------------------------------------->
-
-
 <subset name="Wheel Position" displayName="Wheel Position">
 <include name="Right" displayName="Right"/>
 <include name="Left" displayName="Left"/>
@@ -248,15 +235,10 @@
 </subset>
 
 
-
-<!----------------------------------------------------->
-<!-------------------- GAMELIST ----------------------->
-<!----------------------------------------------------->
-
 <include name="gamecarousel">./views/gamelist/wheel.xml</include>
 <include name="basic">./views/gamelist/basic.xml</include>
-<include name="detailed">./views/gamelist/detailed.xml</include>
 <include name="grid">./views/gamelist/grid.xml</include>
 <include name="video">./views/gamelist/video.xml</include>
 <include name="Gamecarousel Detailed">./views/gamelist/wheel detailed.xml</include>
+<include name="detailed">./views/gamelist/detailed.xml</include>
 </theme>
