@@ -104,17 +104,6 @@
 <include name="25%" displayName="25%">./includes/logo opacity/25%.xml</include>
 </subset>
 
-<subset name="Logo Type" displayName="Logo Style">
-<include name="Clean" displayName="Clean">./includes/wheel/clean.xml</include>
-<include name="Classic" displayName="Classic">./includes/wheel/classic.xml</include>
-<include name="Rectangle" displayName="Rectangle">./includes/wheel/rectangle.xml</include>
-<include name="Long" displayName="Long">./includes/wheel/long.xml</include>
-<include name="Silver" displayName="Silver">./includes/wheel/silver.xml</include>
-<include name="Colorful" displayName="Colorful">./includes/wheel/colorful.xml</include>
-<!--<include name="Spiral" displayName="Spiral">./includes/wheel/spiral.xml</include>-->
-<!--<include name="Circular" displayName="Circular">./includes/wheel/circular.xml</include>-->
-</subset>
-
 <subset name="Main Menu" displayName="System View Style">
 <include name="Main Menu Wheel" displayName="Vertical Wheel">./views/system/wheel.xml</include>
 <include name="Main Menu Grid" displayName="Horizontal Grid">./views/system/grid.xml</include>

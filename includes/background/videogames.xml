@@ -9,13 +9,20 @@
 <pos>0.5 0.5</pos>
 <origin>0.5 0.5</origin>
 <size>1 1</size>
+
 <path>./art/background videogames/default.jpg</path>
 <path>./art/background videogames/${system.theme}.png</path>
 <path>./art/background videogames/${system.theme}.jpg</path>
 <path>./art/background videogames/${system.theme}.webp</path>
 <path>./art/background videogames/${system.theme}.bmp</path>
+
+<path>./art/background videogames/${system.theme}-${region}.png</path>
+<path>./art/background videogames/${system.theme}-${region}.jpg</path>
+<path>./art/background videogames/${system.theme}-${region}.webp</path>
+<path>./art/background videogames/${system.theme}-${region}.bmp</path>
+
 <zIndex>1</zIndex>
 </image>
-</view>
 
+</view>
 </theme>
