@@ -26,6 +26,16 @@
             <defaultTransition>instant</defaultTransition>
         </carousel>
 
+    	<text name="logoText">
+      	    <fontPath>./art/fonts/Cabin-Bold.ttf</fontPath>
+            <fontSize>0.06</fontSize>
+            <color>FFFFFFFF</color>
+            <glowColor>00000010</glowColor>
+            <glowSize>3</glowSize>
+            <forceUppercase>false</forceUppercase>  
+            <default>${system.name}</default>  
+        </text>
+
         <!-- HELP / INFO -->
         <text name="systemInfo">
             <origin>0.5 0.5</origin>
@@ -75,25 +85,49 @@
             <pos ifSubset="Wheel Position:Left">0.63 0.095</pos>
             <origin>0.5 0.5</origin>
             <maxSize>0.250 0.14</maxSize>
+            
             <path>./art/logos/${system.theme}.png</path>
-            <path>./art/logos/${system.theme}.jpg</path>
-            <path>./art/logos/${system.theme}.webp</path>
-            <path>./art/logos/${system.theme}.bmp</path>
-            <zIndex>555</zIndex>
+            <path>./art/logos/${system.theme}.svg</path>
+            <path>./art/logos/${system.theme}-${lang}.png</path>
+            <path>./art/logos/${system.theme}-${lang}.svg</path>
+	    <path>./art/logos/${system.theme}-${region}.png</path>
+            <path>./art/logos/${system.theme}-${region}.svg</path>
+
+	    <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.svg</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.png</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${lang}.svg</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.${lang}.png</path>
+	    <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.svg</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.png</path>
+                  
+           
+  	    <linearSmooth>true</linearSmooth>
         </image>
 
         <image name="logo" region="eu"/>
         <image name="logo" region="us"/>
         <image name="logo" region="jp"/>
         <image name="logo" region="br"/>
-
-        <image name="logo">
-            <path>./art/logos/${system.theme}.svg</path>
+      
+	
+	<image name="logo">
             <path>./art/logos/${system.theme}.png</path>
+            <path>./art/logos/${system.theme}.svg</path>
+            <path>./art/logos/${system.theme}-${lang}.png</path>
+            <path>./art/logos/${system.theme}-${lang}.svg</path>
+    	    <path>./art/logos/${system.theme}-${region}.png</path>
             <path>./art/logos/${system.theme}-${region}.svg</path>
-            <path>./art/logos/${system.theme}-${region}.png</path>
-            <linearSmooth>true</linearSmooth>
+
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.svg</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.png</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${lang}.svg</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${lang}.png</path>
+	    <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.svg</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.png</path>
+              
+  	    <linearSmooth>true</linearSmooth>
         </image>
+
 
         <!-- FIXED ART -->
         <image name="swb1" ifSubset="Wheel Background:Light" extra="true">

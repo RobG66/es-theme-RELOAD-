@@ -32,12 +32,22 @@
 
 <image name="showlogo" extra="true">
 <pos ifSubset="Wheel Position:Right">0.610 0.075</pos>
-<pos ifSubset="Wheel Position:Left">0.385 0.075</pos>
+<pos ifSubset="Wheel Position:Left">0.390 0.075</pos>
 <origin>0.5 0.5</origin>
 <maxSize>0.20 .10</maxSize>
 <zIndex>22</zIndex>
-<path>./art/logos/long/${system.theme}.png</path>
-<path>./art/logos/clean/${system.theme}.png</path>
+<path>./art/logos/${system.theme}.png</path>
+<path>./art/logos/${system.theme}.svg</path>
+<path>./art/logos/${system.theme}-${lang}.png</path>
+<path>./art/logos/${system.theme}-${lang}.svg</path>
+<path>./art/logos/${system.theme}-${region}.png</path>
+<path>./art/logos/${system.theme}-${region}.svg</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.svg</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.png</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${lang}.svg</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${lang}.png</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.svg</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.png</path>
 <animation mode="linear" duration="4000" begin="1000" property="scale" repeat="forever" autoreverse="true" from="1.00" to="1.02"/>
 </image>
 
@@ -55,13 +65,12 @@
 
 
 <image name="pointer" extra="true">
-<pos ifSubset="Wheel Position:Right">0.939 0.405</pos>
-<pos ifSubset="Wheel Position:Left">0.0 0.405</pos>
-<rotation ifSubset="Wheel Position:Left">180</rotation>
-<rotation ifSubset="Wheel Position:Right">0</rotation>
+<pos ifSubset="Wheel Position:Right">0.937 0.405</pos>
+<pos ifSubset="Wheel Position:Left">0 0.405</pos>
 <maxSize>0.2 0.2</maxSize>
-<path>./art/wheel/pointers/default.png</path>
-<path>./art/wheel/pointers/${system.theme}.png</path>
+<path ifSubset="Wheel Position:Left">./art/wheel/pointers/default-left.png</path>
+<path ifSubset="Wheel Position:Right">./art/wheel/pointers/default.png</path>
+<path ifSubset="Wheel Position:Right">./art/wheel/pointers/${system.theme}.png</path>
 <zIndex>5</zIndex>
 </image>
 
@@ -94,22 +103,13 @@
 <rotation ifSubset="Wheel Position:Right">0</rotation>
 </image>
 
-<image name="gamelist background" extra="true">
-<pos>0 0</pos>
-<size>1 1</size>
-<zIndex>1</zIndex>
-<path>./art/background fanart/default.jpg</path>
-<path>./art/background fanart/${system.theme}.png</path>
-<path>./art/background fanart/${system.theme}.jpg</path>
-</image>
-
 <!--------------------------------------------------------->
 <!----------------------- ART EXTRAS ---------------------->
 <!--------------------------------------------------------->
 
 <image name="black_screen" extra="true">
 <pos ifSubset="Wheel Position:Right">0 0</pos>
-<pos ifSubset="Wheel Position:Left">0.43 0</pos>
+<pos ifSubset="Wheel Position:Left">0.44 0</pos>
 <size>1 1</size>
 <zIndex>16</zIndex>
 <path>./art/video frames/black_screen.png</path>
@@ -117,25 +117,11 @@
 
 <image name="video_frame" extra="true">
 <pos ifSubset="Wheel Position:Right">0 0</pos>
-<pos ifSubset="Wheel Position:Left">0.43 0</pos>
+<pos ifSubset="Wheel Position:Left">0.44 0</pos>
 <size>1 1</size>
 <zIndex>20</zIndex>
 <path>./art/video frames/default.png</path>
 <path>./art/video frames/${system.theme}.png</path>
-</image>
-
-<image name="console" aspect="true" extra="true">
-<path>./art/consoles/${system.theme}.png</path>
-<path>./art/consoles/${system.theme}-${region}.png</path>
-<pos ifSubset="Wheel Position:Right">0.13 0.80</pos>
-<pos ifSubset="Wheel Position:Left">0.88 0.80</pos>
-<origin>0.5 0.5</origin>
-<maxSize>0.20 .20</maxSize>
-<zIndex>30</zIndex>
-<storyboard>
-<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
-<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
-</storyboard>
 </image>
 
 
@@ -192,7 +178,7 @@
 
 <image name="md_fanart" extra="true">
 <pos ifSubset="Wheel Position:Right">0.2810 0.53</pos>
-<pos ifSubset="Wheel Position:Left">0.71 0.53</pos>
+<pos ifSubset="Wheel Position:Left">0.728 0.53</pos>
 <origin>0.50 0.50</origin>
 <maxSize>0.35 0.40</maxSize>
 <zIndex>17</zIndex>
@@ -200,18 +186,18 @@
 
 <video name="md_video">
 <pos ifSubset="Wheel Position:Right">0.2810 0.53</pos>
-<pos ifSubset="Wheel Position:Left">0.71 0.53</pos>
+<pos ifSubset="Wheel Position:Left">0.728 0.53</pos>
 <origin>0.5 0.5</origin>
 <effect>none</effect>
 <maxSize>0.35 0.505</maxSize>
-<delay>1.5</delay>
+<delay>1.0</delay>
 <zIndex>18</zIndex>
 </video>
 
 
 <image name="md_marquee" extra="true">
 <pos ifSubset="Wheel Position:Right">0.28 0.124</pos>
-<pos ifSubset="Wheel Position:Left">0.71 0.124</pos>
+<pos ifSubset="Wheel Position:Left">0.72 0.124</pos>
 <origin>0.5 0.5</origin>
 <maxSize>0.4 .2</maxSize>
 </image>

@@ -236,16 +236,6 @@
            </textlist>
    </view>
    
-   <view name="system">
-		<text name="logoText">
-		<fontSize>0.040</fontSize>
-		<text>${system.theme}</text>
-		<color>ffffff</color>
-		<glowColor>black</glowColor>
-		<glowSize>1</glowSize>
-		<forceUppercase>true</forceUppercase>
-		</text>		
-	</view>
 
 	<view name="gamecarousel">
 		<text name="gamecarouselLogoText">
@@ -254,6 +244,7 @@
 		<glowColor>black</glowColor>
 		<glowSize>1</glowSize>
 		<forceUppercase>true</forceUppercase>
+		<default>${system.name}</default>  
 		</text>	
 	</view>
 

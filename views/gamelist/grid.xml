@@ -78,7 +78,18 @@
 <pos>0.50 0.10</pos>
 <origin>0.5 0.5</origin>
 <maxSize>0.30 0.30</maxSize>
-<path>./art/logos/clean/${system.theme}.png</path>	 
+<path>./art/logos/${system.theme}.png</path>
+<path>./art/logos/${system.theme}.svg</path>
+<path>./art/logos/${system.theme}-${lang}.png</path>
+<path>./art/logos/${system.theme}-${lang}.svg</path>
+<path>./art/logos/${system.theme}-${region}.png</path>
+<path>./art/logos/${system.theme}-${region}.svg</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.svg</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.png</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${lang}.svg</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${lang}.png</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.svg</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.png</path>
 <zIndex>400</zIndex>
 </image>
 	
@@ -86,7 +97,6 @@
 <pos>0.5 0.5</pos>
 <origin>0.5 0.5</origin>
 <size>1 1</size>
-<path>./art/background videogames/${system.theme}.jpg</path>	 
 <color>363636</color>
 <zIndex>1</zIndex>
 <storyboard event="open">

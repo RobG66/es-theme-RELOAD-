@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <theme defaultView="Gamecarousel Detailed">
-<formatVersion>7</formatVersion>
 
+<formatVersion>7</formatVersion>
+  
 <view name="screen">
 
 <text name="clock">
@@ -85,6 +86,7 @@
 </menuTextEdit>
 </view>
  
+
 <subset name="Wheel Position" displayName="Wheel Position">
 <include name="Right" displayName="Right"/>
 <include name="Left" displayName="Left"/>
@@ -95,6 +97,11 @@
 <include name="Dark" displayName="Dark"/>
 <include name="Bright" displayName="Bright"/>
 <include name="OFF" displayName="OFF"/>
+</subset>
+
+<subset name="System Logo Priority" displayName="System Logo Priority">
+<include name="svg" displayName="svg"/>
+<include name="png" displayName="png"/>
 </subset>
 
 <subset name="Logo Opacity" displayName="Logo Opacity">  
@@ -109,9 +116,15 @@
 <include name="Main Menu Grid" displayName="Horizontal Grid">./views/system/grid.xml</include>
 </subset>
 
-<subset name="Background" displayName="System Background Image">
-<include name="Videogames" displayName="Videogame Hardware">./includes/background/videogames.xml</include>
-<include name="Wallpapers" displayName="Fan Art Theme">./includes/background/fanart.xml</include>
+<subset name="Background" displayName="System View Background Image">
+<include name="Videogames" displayName="Videogame Hardware">./includes/background/system-videogames.xml</include>
+<include name="Wallpapers" displayName="Fan Art Theme">./includes/background/system-fanart.xml</include>
+<include name="OFF" displayName="OFF"/>
+</subset>
+
+<subset name="GameBackground" displayName="Games View Background Image">
+<include name="Videogames" displayName="Videogame Hardware">./includes/background/games-videogames.xml</include>
+<include name="Wallpapers" displayName="Fan Art Theme">./includes/background/games-fanart.xml</include>
 <include name="OFF" displayName="OFF"/>
 </subset>
 
@@ -125,6 +138,41 @@
 <include name="Box" displayName="Box"/>
 <include name="Character" displayName="Character"/>
 <include name="OFF" displayName="OFF"/>
+</subset>
+
+<subset name="ConsoleArt" displayName="Gamelist Console Icon">
+<include name="ON" displayName="ON">./includes/console/console-art.xml</include>
+<include name="OFF" displayName="OFF"/>
+</subset>
+
+<subset name="Background Effects" displayName="Screen Background Zoom">
+<include name="Zoom In" displayName="Zoom In">./includes/background effects/zoom in.xml</include>
+<include name="Zoom Out" displayName="Zoom Out">./includes/background effects/zoom out.xml</include>
+<include name="OFF" displayName="OFF"/>
+</subset>
+
+<subset name="Shader" displayName="Screen Shader Effect">
+<include name="OFF" displayName="OFF"/>
+<include name="ScanLines" displayName="Scanlines">./includes/shader/scanlines.xml</include>
+<include name="Crt" displayName="CRT">./includes/shader/crt.xml</include>
+</subset>
+
+<subset name="Screen Shadow" displayName="Screen Edge Shadow">
+<include name="BottomOnly" displayName="Bottom Only">./includes/frame/frame1.xml</include>
+<include name="AllAround" displayName="All Around">./includes/frame/frame2.xml</include>
+<include name="OFF" displayName="OFF"/>
+</subset>
+
+<subset name="Button Icons" displayName="Help Button Icons"> 
+<include subset="iconset" name="Default">./includes/buttons/default.xml</include>
+<include subset="iconset" name="PSX">./includes/buttons/psx.xml</include>
+<include subset="iconset" name="SNES">./includes/buttons/snes.xml</include>
+<include subset="iconset" name="XBOX">./includes/buttons/xbox.xml</include>
+<include subset="iconset" name="ARCADE">./includes/buttons/arcade.xml</include>
+<include subset="iconset" name="Xbox One">./includes/buttons/xboxone.xml</include>
+<include subset="iconset" name="Switch">./includes/buttons/switch.xml</include>
+<include subset="iconset" name="PSX ALT">./includes/buttons/psx1.xml</include>
+<include subset="iconset" name="SNES ALT">./includes/buttons/snesalt.xml</include>
 </subset>
 
 <subset name="Color" displayName="Font Color">
@@ -192,37 +240,6 @@
 <include subset="Font" name="Verdana">./includes/fonts/verdana.xml</include>
 <include subset="Font" name="Zelek">./includes/fonts/Sketch3D.xml</include>
 </subset>
-
-<subset name="Background Effects" displayName="Screen Background Zoom">
-<include name="Zoom In" displayName="Zoom In">./includes/background effects/zoom in.xml</include>
-<include name="Zoom Out" displayName="Zoom Out">./includes/background effects/zoom out.xml</include>
-<include name="OFF" displayName="OFF"/>
-</subset>
-
-<subset name="Shader" displayName="Screen Shader Effect">
-<include name="OFF" displayName="OFF"/>
-<include name="ScanLines" displayName="Scanlines">./includes/shader/scanlines.xml</include>
-<include name="Crt" displayName="CRT">./includes/shader/crt.xml</include>
-</subset>
-
-<subset name="Screen Shadow" displayName="Screen Edge Shadow">
-<include name="BottomOnly" displayName="Bottom Only">./includes/frame/frame1.xml</include>
-<include name="AllAround" displayName="All Around">./includes/frame/frame2.xml</include>
-<include name="OFF" displayName="OFF"/>
-</subset>
-
-<subset name="Button Icons" displayName="Help Button Icons"> 
-<include subset="iconset" name="Default">./includes/buttons/default.xml</include>
-<include subset="iconset" name="PSX">./includes/buttons/psx.xml</include>
-<include subset="iconset" name="SNES">./includes/buttons/snes.xml</include>
-<include subset="iconset" name="XBOX">./includes/buttons/xbox.xml</include>
-<include subset="iconset" name="ARCADE">./includes/buttons/arcade.xml</include>
-<include subset="iconset" name="Xbox One">./includes/buttons/xboxone.xml</include>
-<include subset="iconset" name="Switch">./includes/buttons/switch.xml</include>
-<include subset="iconset" name="PSX ALT">./includes/buttons/psx1.xml</include>
-<include subset="iconset" name="SNES ALT">./includes/buttons/snesalt.xml</include>
-</subset>
-
 
 <include name="gamecarousel">./views/gamelist/wheel.xml</include>
 <include name="basic">./views/gamelist/basic.xml</include>

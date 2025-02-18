@@ -36,19 +36,20 @@
 <origin>0.5 0.5</origin> 
 <pos>0.153 0.0790</pos>
 <maxSize>0.220 0.100</maxSize>
-<path>./art/logos/clean/${system.theme}.png</path>
+<path>./art/logos/${system.theme}.png</path>
+<path>./art/logos/${system.theme}.svg</path>
+<path>./art/logos/${system.theme}-${lang}.png</path>
+<path>./art/logos/${system.theme}-${lang}.svg</path>
+<path>./art/logos/${system.theme}-${region}.png</path>
+<path>./art/logos/${system.theme}-${region}.svg</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.svg</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.png</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${lang}.svg</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${lang}.png</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.svg</path>
+<path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.png</path>
 <linearSmooth>true</linearSmooth>
 <zIndex>30</zIndex>
-</image>
-
-<image name="background" extra="true">
-<origin>0.5 0.5</origin> 
-<pos>0.5 0.5</pos>
-<size>1 1</size>
-<path>./art/background videogames/${system.theme}.jpg</path>
-<color>363636</color>
-<linearSmooth>true</linearSmooth>
-<zIndex>1</zIndex>
 </image>
 
 <image name="basic frames" extra="true">

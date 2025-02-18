@@ -220,16 +220,7 @@
 	</text>
 	</view>
 	
-	<view name="system">
-		<text name="logoText">
-		<fontSize>0.040</fontSize>
-		<text>${system.theme}</text>
-		<color>00ff33</color>
-		<glowColor>black</glowColor>
-		<glowSize>1</glowSize>
-		<forceUppercase>true</forceUppercase>
-		</text>		
-	</view>
+	
 
 	<view name="gamecarousel">
 		<text name="gamecarouselLogoText">

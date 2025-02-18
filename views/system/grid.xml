@@ -17,10 +17,20 @@
             <zIndex>50</zIndex>
             <logoScale>1.20</logoScale>
             <logomaxSize>0.20 0.20</logomaxSize>
-            <color>FFFFFF15</color>
+            <color>FFFFFF35</color>
             <logoAlignment>center</logoAlignment>
             <maxLogoCount>3</maxLogoCount>
         </carousel>
+
+        <text name="logoText">
+      	    <fontPath>./art/fonts/Cabin-Bold.ttf</fontPath>
+            <fontSize>0.06</fontSize>
+            <color>FFFFFFFF</color>
+            <glowColor>00000010</glowColor>
+            <glowSize>3</glowSize>
+            <forceUppercase>false</forceUppercase>  
+            <default>${system.name}</default>  
+        </text>
 
         <!---------------------------------------------------------------------->
         <!------------------------------ HELP / INFO --------------------------->
@@ -102,19 +112,40 @@
             <pos>0.16 0.085</pos>
             <origin>0.5 0.5</origin>
             <maxSize>0.2 0.2</maxSize>
-            <path>./art/logos/${system.theme}.svg</path>
+
             <path>./art/logos/${system.theme}.png</path>
-	    <path>./art/logos/${system.theme}-${region}.svg</path>
-            <path>./art/logos/${system.theme}-${region}.png</path>
-            <zIndex>8</zIndex>
+            <path>./art/logos/${system.theme}.svg</path>
+            <path>./art/logos/${system.theme}-${lang}.png</path>
+            <path>./art/logos/${system.theme}-${lang}.svg</path>
+	    <path>./art/logos/${system.theme}-${region}.png</path>
+            <path>./art/logos/${system.theme}-${region}.svg</path>
+
+	    <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.svg</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.png</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${lang}.svg</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.${lang}.png</path>
+	    <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.svg</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.png</path>
+                  
+	    <zIndex>8</zIndex>
         </image>
 
-        <image name="logo">
-            <path>./art/logos/${system.theme}.svg</path>
+	<image name="logo">
             <path>./art/logos/${system.theme}.png</path>
+            <path>./art/logos/${system.theme}.svg</path>
+            <path>./art/logos/${system.theme}-${lang}.png</path>
+            <path>./art/logos/${system.theme}-${lang}.svg</path>
+    	    <path>./art/logos/${system.theme}-${region}.png</path>
             <path>./art/logos/${system.theme}-${region}.svg</path>
-            <path>./art/logos/${system.theme}-${region}.png</path>
-            <linearSmooth>true</linearSmooth>
+
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.svg</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.png</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${lang}.svg</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${lang}.png</path>
+	    <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.svg</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.png</path>
+              
+  	    <linearSmooth>true</linearSmooth>
         </image>
 
         <!-------------------------------------------------------------------->
