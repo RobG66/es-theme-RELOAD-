@@ -102,6 +102,7 @@
 <subset name="System Logo Priority" displayName="System Logo Priority">
 <include name="svg" displayName="svg"/>
 <include name="png" displayName="png"/>
+<include name="white" displayName="white"/>
 </subset>
 
 <subset name="Logo Opacity" displayName="Logo Opacity">  

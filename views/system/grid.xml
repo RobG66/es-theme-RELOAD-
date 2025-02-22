@@ -127,6 +127,9 @@
 	    <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.svg</path>
             <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.png</path>
                   
+	    <path ifSubset="System Logo Priority:white">./art/logos/${system.theme}-w.svg</path>
+            
+
 	    <zIndex>8</zIndex>
         </image>
 
@@ -145,6 +148,8 @@
 	    <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.svg</path>
             <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.png</path>
               
+	    <path ifSubset="System Logo Priority:white">./art/logos/${system.theme}-w.svg</path>
+            
   	    <linearSmooth>true</linearSmooth>
         </image>
 

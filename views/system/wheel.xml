@@ -57,13 +57,11 @@
         <image name="pointer" extra="true">
             <pos ifSubset="Wheel Position:Right">0.939 0.405</pos>
             <pos ifSubset="Wheel Position:Left">0.0 0.405</pos>
-            <rotation ifSubset="Wheel Position:Left">180</rotation>
-            <rotation ifSubset="Wheel Position:Right">0</rotation>
             <maxSize>0.2 0.2</maxSize>
-            <path>./art/wheel/pointers/default.png</path>
-            <path>./art/wheel/pointers/${system.theme}.svg</path>
-            <path>./art/wheel/pointers/${system.theme}.png</path>
-            <zIndex>5</zIndex>
+           <path ifSubset="Wheel Position:Left">./art/wheel/pointers/default-left.png</path>
+           <path ifSubset="Wheel Position:Right">./art/wheel/pointers/default.png</path>
+           <path ifSubset="Wheel Position:Right">./art/wheel/pointers/${system.theme}.png</path>
+           <zIndex>5</zIndex>
         </image>
 
         <video name="background_video" extra="true">
@@ -99,6 +97,8 @@
             <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.${lang}.png</path>
 	    <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.svg</path>
             <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.png</path>
+            
+	    <path ifSubset="System Logo Priority:white">./art/logos/${system.theme}-w.svg</path>
                   
            
   	    <linearSmooth>true</linearSmooth>
@@ -124,6 +124,9 @@
             <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${lang}.png</path>
 	    <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.svg</path>
             <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.png</path>
+
+	    <path ifSubset="System Logo Priority:white">./art/logos/${system.theme}-w.svg</path>
+            
               
   	    <linearSmooth>true</linearSmooth>
         </image>

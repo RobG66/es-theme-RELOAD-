@@ -196,8 +196,8 @@
 
 
 <image name="md_marquee" extra="true">
-<pos ifSubset="Wheel Position:Right">0.28 0.124</pos>
-<pos ifSubset="Wheel Position:Left">0.72 0.124</pos>
+<pos ifSubset="Wheel Position:Right">0.282 0.126</pos>
+<pos ifSubset="Wheel Position:Left">0.721 0.126</pos>
 <origin>0.5 0.5</origin>
 <maxSize>0.4 .2</maxSize>
 </image>
