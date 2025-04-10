@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+<formatVersion>7</formatVersion>
+
+<view name="gamecarousel,detailed">
+
+<image name="console" aspect="true" extra="true">
+<pos ifSubset="Wheel Position:Right">0.10 0.87</pos>
+<pos ifSubset="Wheel Position:Left">0.89 0.87</pos>
+<origin>0.5 0.5</origin>
+<maxSize>0.20 .20</maxSize>
+<zIndex>30</zIndex>
+<path>./art/consoles/${system.theme}.png</path>
+<path>./art/consoles/${system.theme}-${region}.png</path>
+<storyboard>
+<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+</storyboard>
+</image>
+
+</view>
+
+</theme>

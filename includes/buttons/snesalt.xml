@@ -1,7 +1,7 @@
 <theme>
 	<formatVersion>4</formatVersion>
 	
-	<view name="menu, system, basic, detailed, video, grid, gamecarousel">
+	<view name="menu, system, detailed, gamecarousel">
 		<helpsystem name="help">
 			<iconColor>FFFFFFFF</iconColor>
 			<iconUpDown>./includes/buttons/snesalt/updown.png</iconUpDown>

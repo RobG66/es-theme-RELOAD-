@@ -1,7 +1,7 @@
 <theme>
    <formatVersion>7</formatVersion>
 
-<view name="system,basic,detailed,video,grid,gamecarousel">
+<view name="system,detailed,gamecarousel">
 
 
 <image name="Footer" extra="true">

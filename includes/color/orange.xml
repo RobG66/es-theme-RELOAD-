@@ -20,7 +20,7 @@
 	
  </view> 
 
-    <view name="basic, detailed, video, grid, gamecarousel, system">
+    <view name="detailed, gamecarousel, system">
       <helpsystem name="help">
 		 <textColor>ff6600</textColor>
       </helpsystem>
@@ -29,72 +29,6 @@
     </text> 
 	</view>
 	
-	<view name="grid"> 
-	
-	<text name="md_lbl_developer">
-    <color>ff6600</color>
-    </text> 
-
-    <text name="md_lbl_publisher">
-    <color>ff6600</color>
-    </text> 
-
-    <text name="md_lbl_releasedate">
-    <color>ff6600</color>
-    </text> 
-	
-    <text name="md_lbl_rating">
-    <color>ff6600</color>
-    </text> 
-	
-	</view>
-	
-	<view name="video"> 
-	
-    <textlist name="gamelist">
-	<selectorImagePath>./includes/theme color/border/orange.png</selectorImagePath>
-	</textlist>
-	
-	<text name="md_lbl_developer">
-	<color>ff6600</color>
-	</text>
-	
-	<text name="md_lbl_releasedate">
-	<color>ff6600</color>
-	</text>
-	
-	<text name="md_lbl_rating">
-	<color>ff6600</color>
-	</text>
-	
-	<text name="md_lbl_genre">
-	<color>ff6600</color>
-	</text>
-	<text name="md_lbl_publisher">
-	 <color>ff6600</color>
-	 </text>
-	 
-	 <text name="md_lbl_players">
-	 <color>ff6600</color>
-	 </text>
-	 
-	 <text name="md_lbl_playcount">
-	 <color>ff6600</color>
-	 </text>
-	 
-	 <text name="md_lbl_lastplayed">
-	 <color>ff6600</color>
-	 </text>
-	 
-	  <text name="md_lbl_gametime">
-	  <color>ff6600</color>
-	  </text>
-	 
-	  <text name="md_description">
-	  <color>ff6600</color>
-	  </text>
-	
-	</view>
 	
 	<view name="detailed,gamecarousel"> 
 	
@@ -142,49 +76,6 @@
 	 
 	</view>
 	
-	<view name="basic"> 
-	
-    <text name="md_lbl_developer">
-	<color>ff6600</color>
-	</text>
-	
-	<text name="md_lbl_releasedate">
-	<color>ff6600</color>
-	</text>
-	
-	<text name="md_lbl_rating">
-	<color>ff6600</color>
-	</text>
-	
-	<text name="md_lbl_genre">
-	<color>ff6600</color>
-	</text>
-	
-	 <text name="md_lbl_publisher">
-	 <color>ff6600</color>
-	 </text>
-	 
-	 <text name="md_lbl_players">
-	 <color>ff6600</color>
-	 </text>
-	 
-	 <text name="md_lbl_playcount">
-	 <color>ff6600</color>
-	 </text>
-	 
-	 <text name="md_lbl_lastplayed">
-	 <color>ff6600</color>
-	 </text>
-	 
-	  <text name="md_lbl_gametime">
-	  <color>ff6600</color>
-	  </text>
-	 
-	  <text name="md_description">
-	  <color>ff6600</color>
-	  </text>
-	 
-	</view>
 	   
 	<view name="screen">
     <text name="clock">
@@ -192,15 +83,6 @@
 	</text>
 	</view>
 	
-	<view name="basic">
-         <textlist name="gamelist">
-         <selectorColor>ff6600</selectorColor> 
-	     <selectedColor>000000</selectedColor>     
-         <primaryColor>ffffff</primaryColor>
-         <secondaryColor>ffffff</secondaryColor>
-           </textlist>
-   </view>
-   
       <view name="detailed,gamecarousel">
          <textlist name="gamelist">
          <selectorColor>ff6600</selectorColor> 
@@ -211,16 +93,6 @@
    </view>
    
    
-      <view name="video">
-         <textlist name="gamelist">
-         <selectorColor>ff6600</selectorColor> 
-	     <selectedColor>ff6600</selectedColor>     
-         <primaryColor>ffffff</primaryColor>
-         <secondaryColor>ffffff</secondaryColor>
-           </textlist>
-   </view>
-   
- 
 
 	<view name="gamecarousel">
 		<text name="gamecarouselLogoText">

@@ -3,7 +3,7 @@
 <theme>
 <formatVersion>7</formatVersion>
 
-<view name="gamecarousel,Gamecarousel Detailed,video,grid,basic">
+<view name="gamecarousel,detailed">
 
 <image name="background" extra="true">
 <pos>0.5 0.5</pos>

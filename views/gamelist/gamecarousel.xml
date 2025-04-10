@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+
+<formatVersion>7</formatVersion>
+
+<view name="gamecarousel">
+
+<!----------------------------------------------------------->
+<!------------------------ CARROUSEL ------------------------>
+<!----------------------------------------------------------->
+
+<gamecarousel name="gamecarousel">
+<scrollSpeed>.05</scrollSpeed>
+<zIndex>10</zIndex>	   
+<origin>0 0</origin>   
+<maxLogoCount>10</maxLogoCount>
+<size>1 1</size>
+<type>vertical_wheel</type>
+<pos ifSubset="Wheel Position:Right">0.34 0</pos>
+<pos ifSubset="Wheel Position:Left">-0.34 0</pos>
+<logoSize>0.15 0.250</logoSize>
+<logoScale>1.3</logoScale> 
+<color>00000000</color>
+<logoRotation>-12.5</logoRotation>
+<logoRotationOrigin ifSubset="Wheel Position:Right">4 0.5</logoRotationOrigin>
+<logoRotationOrigin ifSubset="Wheel Position:Left">-2.5 0.5</logoRotationOrigin>
+<logoRotation ifSubset="Wheel Position:Right">-10.5</logoRotation>
+<logoRotation ifSubset="Wheel Position:Left">-14.5</logoRotation>
+<logoAlignment>center</logoAlignment>       
+<imageSource>marquee</imageSource>
+</gamecarousel> 
+
+<image name="pointer" extra="true">
+<pos ifSubset="Wheel Position:Right">0.937 0.405</pos>
+<pos ifSubset="Wheel Position:Left">0 0.405</pos>
+<maxSize>0.2 0.2</maxSize>
+<path ifSubset="Wheel Position:Left">./art/wheel/pointers/default-left.png</path>
+<path ifSubset="Wheel Position:Right">./art/wheel/pointers/default.png</path>
+<path ifSubset="Wheel Position:Right">./art/wheel/pointers/${system.theme}.png</path>
+<zIndex>5</zIndex>
+</image>
+
+<image name="swb1" ifSubset="Wheel Background:Light" extra="true">
+<pos>0 0</pos>
+<size>1 1</size>
+<path>./art/wheel/light.png</path>
+<zIndex>4</zIndex>
+<flipX ifSubset="Wheel Position:Left">true</flipX>
+<flipX ifSubset="Wheel Position:Right">false</flipX>
+</image>
+
+<image name="swb2" ifSubset="Wheel Background:Dark" extra="true">
+<pos>0 0</pos>
+<size>1 1</size>
+<path>./art/wheel/dark.png</path>
+<zIndex>4</zIndex>
+<flipX ifSubset="Wheel Position:Left">true</flipX>
+<flipX ifSubset="Wheel Position:Right">false</flipX>
+</image>
+
+<image name="swb3" ifSubset="Wheel Background:Bright" extra="true">
+<pos>0 0</pos>
+<size>1 1</size>
+<opacity>.9</opacity>
+<path>./art/wheel/bright.png</path>
+<zIndex>4</zIndex>
+<rotation ifSubset="Wheel Position:Left">180</rotation>
+<rotation ifSubset="Wheel Position:Right">0</rotation>
+</image>
+
+
+</view>
+ 
+</theme>

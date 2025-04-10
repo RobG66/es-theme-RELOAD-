@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+<formatVersion>7</formatVersion>
+
+<view name="gamecarousel,detailed">
+
+<image name="md_thumbnail_only" aspect="true" extra="true">
+<pos ifSubset="Wheel Position:Right">0.45 0.82</pos>
+<pos ifSubset="Wheel Position:Left">0.55 0.82</pos>
+<maxSize>0.10 .25</maxSize>
+<zIndex>500</zIndex>
+<storyboard>
+<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+</storyboard>    
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+</storyboard>  
+</image>
+
+
+</view>
+
+</theme>

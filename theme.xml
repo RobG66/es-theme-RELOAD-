@@ -100,9 +100,9 @@
 </subset>
 
 <subset name="System Logo Priority" displayName="System Logo Priority">
+<include name="white" displayName="white"/>
 <include name="svg" displayName="svg"/>
 <include name="png" displayName="png"/>
-<include name="white" displayName="white"/>
 </subset>
 
 <subset name="Logo Opacity" displayName="Logo Opacity">  
@@ -114,35 +114,36 @@
 
 <subset name="Main Menu" displayName="System View Style">
 <include name="Main Menu Wheel" displayName="Vertical Wheel">./views/system/wheel.xml</include>
-<include name="Main Menu Grid" displayName="Horizontal Grid">./views/system/grid.xml</include>
 </subset>
 
 <subset name="Background" displayName="System View Background Image">
 <include name="Videogames" displayName="Videogame Hardware">./includes/background/system-videogames.xml</include>
 <include name="Wallpapers" displayName="Fan Art Theme">./includes/background/system-fanart.xml</include>
 <include name="OFF" displayName="OFF"/>
+<include name="Classic" displayName="Classic Art">./includes/background/system-classic.xml</include>
 </subset>
 
 <subset name="GameBackground" displayName="Games View Background Image">
 <include name="Videogames" displayName="Videogame Hardware">./includes/background/games-videogames.xml</include>
 <include name="Wallpapers" displayName="Fan Art Theme">./includes/background/games-fanart.xml</include>
+<include name="Classic" displayName="Classic Art">./includes/background/games-classic.xml</include>
 <include name="OFF" displayName="OFF"/>
 </subset>
 
 <subset name="Video" displayName="System Video">
 <include name="Large" displayName="Large Size">./includes/video/large.xml</include>
-<include name="Reduced" displayName="Small Size">./includes/video/small.xml</include>
 <include name="OFF" displayName="OFF">./includes/video/off.xml</include>
 </subset>
 
-<subset name="Wheel Extra" displayName="Wheel Gamelist Box or Character Art">
-<include name="Box" displayName="Box"/>
-<include name="Character" displayName="Character"/>
+<subset name="Gamelist Box Art Type" displayName="Gamelist Box Art Type">
+<include name="Thumbnail" displayName="Thumbnail">./includes/box/thumbnail-art.xml</include>
+<include name="BoxArt" displayName="BoxArt">./includes/box/boxart-art.xml</include>
 <include name="OFF" displayName="OFF"/>
 </subset>
 
-<subset name="ConsoleArt" displayName="Gamelist Console Icon">
-<include name="ON" displayName="ON">./includes/console/console-art.xml</include>
+<subset name="HardwareArt" displayName="Gamelist Hardware Icon">
+<include name="Controller" displayName="Controller">./includes/hardware/controller-art.xml</include>
+<include name="Console" displayName="Console">./includes/hardware/console-art.xml</include>
 <include name="OFF" displayName="OFF"/>
 </subset>
 
@@ -242,10 +243,8 @@
 <include subset="Font" name="Zelek">./includes/fonts/Sketch3D.xml</include>
 </subset>
 
-<include name="gamecarousel">./views/gamelist/wheel.xml</include>
-<include name="basic">./views/gamelist/basic.xml</include>
-<include name="grid">./views/gamelist/grid.xml</include>
-<include name="video">./views/gamelist/video.xml</include>
-<include name="Gamecarousel Detailed">./views/gamelist/wheel detailed.xml</include>
+<include name="gamecarousel">./views/gamelist/gamecarousel.xml</include>
 <include name="detailed">./views/gamelist/detailed.xml</include>
+<include>./views/gamelist/common.xml</include>
+
 </theme>

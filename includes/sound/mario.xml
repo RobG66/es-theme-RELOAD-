@@ -8,31 +8,12 @@
 	  <scrollSound>./includes/sound/mario.wav</scrollSound>
       </carousel>    
 </view> 
-
-<view name="basic">
-      <textlist name="gamelist">
-	  <scrollSound>./includes/sound/mario.wav</scrollSound>
-      </textlist>
-</view> 
-
 <view name="detailed">
        <textlist name="gamelist">
 	   <scrollSound>./includes/sound/mario.wav</scrollSound>
        </textlist>
 </view> 
      
-<view name="video">
-       <textlist name="gamelist">
-	   <scrollSound>./includes/sound/mario.wav</scrollSound>
-       </textlist>
- </view> 
- 
-<view name="grid">
- 	  <imagegrid name="gamegrid">
-	  <scrollSound>./includes/sound/mario.wav</scrollSound>      		
-      </imagegrid> 
-</view>
-
 <view name="gamecarousel">
       <gamecarousel name="gamecarousel">
       <scrollSound>./includes/sound/mario.wav</scrollSound>  

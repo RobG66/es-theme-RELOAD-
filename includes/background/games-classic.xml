@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+<formatVersion>7</formatVersion>
+
+<view name="gamecarousel,detailed">
+
+<image name="background" extra="true">
+<pos>0.5 0.5</pos>
+<origin>0.5 0.5</origin>
+<size>1 1</size>
+<path>./art/background classic/default.png</path>
+<path>./art/background classic/${system.theme}.png</path>
+<path>./art/background classic/${system.theme}.jpg</path>
+<path>./art/background classic/${system.theme}.webp</path>
+<path>./art/background classic/${system.theme}.bmp</path>
+<zIndex>1</zIndex>  
+</image>
+
+</view>
+
+</theme>

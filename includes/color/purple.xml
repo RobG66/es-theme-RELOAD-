@@ -19,16 +19,6 @@
     </menuText>
 	
  </view> 
-	
-	
-   <view name="basic">
-         <textlist name="gamelist">
-         <selectorColor>330099</selectorColor> 
-	     <selectedColor>ffffff</selectedColor>     
-         <primaryColor>ffffff</primaryColor>
-         <secondaryColor>ffffff</secondaryColor>
-           </textlist>
-   </view>
    
       <view name="detailed,gamecarousel">
          <textlist name="gamelist">
@@ -38,18 +28,8 @@
          <secondaryColor>ffffff</secondaryColor>
            </textlist>
    </view>
-   
-   
-      <view name="video">
-         <textlist name="gamelist">
-         <selectorColor>330099</selectorColor> 
-	     <selectedColor>ffff00</selectedColor>     
-         <primaryColor>ffffff</primaryColor>
-         <secondaryColor>ffffff</secondaryColor>
-           </textlist>
-   </view>
 
-    <view name="basic, detailed, video, grid, gamecarousel, system">
+    <view name="detailed, gamecarousel, system">
       <helpsystem name="help">
 		 <textColor>330099</textColor>
       </helpsystem>
@@ -59,73 +39,6 @@
 	</view>
 	
 		
-	<view name="grid"> 
-	
-	<text name="md_lbl_developer">
-    <color>330099</color>
-    </text> 
-
-    <text name="md_lbl_publisher">
-    <color>330099</color>
-    </text> 
-
-    <text name="md_lbl_releasedate">
-    <color>330099</color>
-    </text> 
-	
-    <text name="md_lbl_rating">
-    <color>330099</color>
-    </text> 
-	
-	</view>
-		
-	<view name="video"> 
-	
-    <textlist name="gamelist">
-	<selectorImagePath>./includes/color/border/purple.png</selectorImagePath>
-	</textlist>
-	
-	<text name="md_lbl_developer">
-	<color>330099</color>
-	</text>
-	
-	<text name="md_lbl_releasedate">
-	<color>330099</color>
-	</text>
-	
-	<text name="md_lbl_rating">
-	<color>330099</color>
-	</text>
-	
-	<text name="md_lbl_genre">
-	<color>330099</color>
-	</text>
-	<text name="md_lbl_publisher">
-	 <color>330099</color>
-	 </text>
-	 
-	 <text name="md_lbl_players">
-	 <color>330099</color>
-	 </text>
-	 
-	 <text name="md_lbl_playcount">
-	 <color>330099</color>
-	 </text>
-	 
-	 <text name="md_lbl_lastplayed">
-	 <color>330099</color>
-	 </text>
-	 
-	  <text name="md_lbl_gametime">
-	  <color>330099</color>
-	  </text>
-	 
-	  <text name="md_description">
-	  <color>330099</color>
-	  </text>
-	
-	</view>
-	
 	<view name="detailed,gamecarousel"> 
 	
     <text name="md_lbl_developer">
@@ -170,49 +83,6 @@
 	 
 	</view>
 	
-	<view name="basic"> 
-	
-    <text name="md_lbl_developer">
-	<color>330099</color>
-	</text>
-	
-	<text name="md_lbl_releasedate">
-	<color>330099</color>
-	</text>
-	
-	<text name="md_lbl_rating">
-	<color>330099</color>
-	</text>
-	
-	<text name="md_lbl_genre">
-	<color>330099</color>
-	</text>
-	
-	 <text name="md_lbl_publisher">
-	 <color>330099</color>
-	 </text>
-	 
-	 <text name="md_lbl_players">
-	 <color>330099</color>
-	 </text>
-	 
-	 <text name="md_lbl_playcount">
-	 <color>330099</color>
-	 </text>
-	 
-	 <text name="md_lbl_lastplayed">
-	 <color>330099</color>
-	 </text>
-	 
-	  <text name="md_lbl_gametime">
-	  <color>330099</color>
-	  </text>
-	 
-	  <text name="md_description">
-	  <color>330099</color>
-	  </text>
-	 
-	</view>
 	   
 	<view name="screen">
     <text name="clock">

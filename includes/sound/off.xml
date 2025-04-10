@@ -9,11 +9,6 @@
       </carousel>    
 </view> 
 
-<view name="basic">
-      <textlist name="gamelist">
-	  <scrollSound>./includes/sound/off.wav</scrollSound>
-      </textlist>
-</view> 
 
 <view name="detailed">
        <textlist name="gamelist">
@@ -21,17 +16,6 @@
        </textlist>
 </view> 
      
-<view name="video">
-       <textlist name="gamelist">
-	   <scrollSound>./includes/sound/off.wav</scrollSound>
-       </textlist>
- </view> 
- 
-<view name="grid">
- 	  <imagegrid name="gamegrid">
-	  <scrollSound>./includes/sound/off.wav</scrollSound>      		
-      </imagegrid> 
-</view>
 
 <view name="gamecarousel">
       <gamecarousel name="gamecarousel">
