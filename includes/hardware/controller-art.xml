@@ -9,7 +9,7 @@
 <pos ifSubset="Wheel Position:Right">0.10 0.87</pos>
 <pos ifSubset="Wheel Position:Left">0.89 0.87</pos>
 <origin>0.5 0.5</origin>
-<maxSize>0.20 .20</maxSize>
+<maxSize>0.15 .15</maxSize>
 <zIndex>30</zIndex>
 <path>./art/controls/${system.theme}.png</path>
 <path>./art/controls/${system.theme}-${region}.png</path>
