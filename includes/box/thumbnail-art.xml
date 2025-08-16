@@ -6,6 +6,8 @@
 <view name="gamecarousel,detailed">
 
 <image name="md_thumbnail_only" aspect="true" extra="true">
+<visible if="${system.hardwareType} != 'arcade'">yes</visible>
+<visible ifSubset="HideGamelistArt:YES" if="${system.hardwareType} == 'arcade'">no</visible>
 <pos ifSubset="Wheel Position:Right">0.45 0.82</pos>
 <pos ifSubset="Wheel Position:Left">0.55 0.82</pos>
 <maxSize>0.10 .25</maxSize>

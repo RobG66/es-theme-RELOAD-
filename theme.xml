@@ -11,7 +11,7 @@
 <glowColor>000000</glowColor>
 <pos>0.89 0.96</pos>
 <size>0.10 0.058</size>
-<verticalAlignment>right</verticalAlignment>
+<verticalAlignment>center</verticalAlignment>
 </text>
 	
 <controllerActivity name="controllerActivity">
@@ -85,7 +85,6 @@
 <active>./textinput_ninepatch_active.png</active>
 </menuTextEdit>
 </view>
- 
 
 <subset name="Wheel Position" displayName="Wheel Position">
 <include name="Right" displayName="Right"/>
@@ -116,17 +115,24 @@
 <include name="Main Menu Wheel" displayName="Vertical Wheel">./views/system/wheel.xml</include>
 </subset>
 
+<subset name="Game Launch Display" displayName="Game Launch Display">
+  <include name="Fanart" displayName="Fanart"/>
+  <include name="Marquee" displayName="Marquee"/>
+  <include name="Screenshot" displayName="Screenshot"/>
+  <include name="TitleShot" displayName="Title Shot"/>
+</subset>
+
 <subset name="Background" displayName="System View Background Image">
+<include name="Classic" displayName="Classic Art">./includes/background/system-classic.xml</include>
 <include name="Videogames" displayName="Videogame Hardware">./includes/background/system-videogames.xml</include>
 <include name="Wallpapers" displayName="Fan Art Theme">./includes/background/system-fanart.xml</include>
 <include name="OFF" displayName="OFF"/>
-<include name="Classic" displayName="Classic Art">./includes/background/system-classic.xml</include>
 </subset>
 
 <subset name="GameBackground" displayName="Games View Background Image">
+<include name="Classic" displayName="Classic Art">./includes/background/games-classic.xml</include>
 <include name="Videogames" displayName="Videogame Hardware">./includes/background/games-videogames.xml</include>
 <include name="Wallpapers" displayName="Fan Art Theme">./includes/background/games-fanart.xml</include>
-<include name="Classic" displayName="Classic Art">./includes/background/games-classic.xml</include>
 <include name="OFF" displayName="OFF"/>
 </subset>
 
@@ -140,6 +146,12 @@
 <include name="BoxArt" displayName="BoxArt">./includes/box/boxart-art.xml</include>
 <include name="OFF" displayName="OFF"/>
 </subset>
+
+<subset name="HideGamelistArt" displayName="Hide Boxart/Thumbnail For Arcade Systems">
+<include name="YES" displayName="YES"/>
+<include name="NO" displayName="NO"/>
+</subset>
+
 
 <subset name="HardwareArt" displayName="Gamelist Hardware Icon">
 <include name="Controller" displayName="Controller">./includes/hardware/controller-art.xml</include>
@@ -155,8 +167,8 @@
 
 <subset name="Shader" displayName="Screen Shader Effect">
 <include name="OFF" displayName="OFF"/>
-<include name="ScanLines" displayName="Scanlines">./includes/shader/scanlines.xml</include>
 <include name="Crt" displayName="CRT">./includes/shader/crt.xml</include>
+<include name="ScanLines" displayName="Scanlines">./includes/shader/scanlines.xml</include>
 </subset>
 
 <subset name="Screen Shadow" displayName="Screen Edge Shadow">
