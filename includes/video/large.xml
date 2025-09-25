@@ -9,7 +9,7 @@
 <visible>true</visible>
 </video>
 
-<image name="video_border" extra="true">
+<image name="video_border" extra="static">
 <visible>true</visible>
 </image>
 
@@ -18,7 +18,7 @@
 </video>
 
 
-<image name="reduced_background_shadow" extra="true">
+<image name="reduced_background_shadow" extra="static">
 <visible>false</visible>
 </image>
 

@@ -5,6 +5,17 @@
 <view name="detailed">
 
 <textlist name="gamelist">
+
+		<glowColor>00000010</glowColor>
+		<glowSize>2</glowSize>
+		
+		<primaryColor>C0C0C0</primaryColor>
+		<secondaryColor>F0F0F0</secondaryColor>
+		<selectedColor>fdde0b</selectedColor>
+		<extraTextColor>c0a767</extraTextColor>
+		<extraTextColor if="{system.theme} == 'RA multiplayer'" >FFFFFF00</extraTextColor>
+		<horizontalMargin>0.005</horizontalMargin> 
+
 <size>0.250 0.83</size>
 <pos ifSubset="Wheel Position:Right">0.742 0.08</pos>
 <pos ifSubset="Wheel Position:Left">0.01 0.08</pos>
@@ -14,7 +25,7 @@
 <zIndex>5</zIndex>	
 </textlist>
 
-<image name="swb5" extra="true">
+<image name="swb5" extra="static">
 <pos>0 0</pos>
 <size>1 1</size>
 <path>./art/gamelist/bg-game.png</path>

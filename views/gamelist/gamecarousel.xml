@@ -1,74 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 
-<formatVersion>7</formatVersion>
+    <formatVersion>7</formatVersion>
 
-<view name="gamecarousel">
+    <view name="gamecarousel">
 
-<!----------------------------------------------------------->
-<!------------------------ CARROUSEL ------------------------>
-<!----------------------------------------------------------->
+        <!----------------------------------------------------------->
+        <!------------------------ CARROUSEL ------------------------>
+        <!----------------------------------------------------------->
 
-<gamecarousel name="gamecarousel">
-<scrollSpeed>.05</scrollSpeed>
-<zIndex>10</zIndex>	   
-<origin>0 0</origin>   
-<maxLogoCount>10</maxLogoCount>
-<size>1 1</size>
-<type>vertical_wheel</type>
-<pos ifSubset="Wheel Position:Right">0.34 0</pos>
-<pos ifSubset="Wheel Position:Left">-0.34 0</pos>
-<logoSize>0.15 0.250</logoSize>
-<logoScale>1.3</logoScale> 
-<color>00000000</color>
-<logoRotation>-12.5</logoRotation>
-<logoRotationOrigin ifSubset="Wheel Position:Right">4 0.5</logoRotationOrigin>
-<logoRotationOrigin ifSubset="Wheel Position:Left">-2.5 0.5</logoRotationOrigin>
-<logoRotation ifSubset="Wheel Position:Right">-10.5</logoRotation>
-<logoRotation ifSubset="Wheel Position:Left">-14.5</logoRotation>
-<logoAlignment>center</logoAlignment>       
-<imageSource>marquee</imageSource>
-</gamecarousel> 
+        <gamecarousel name="gamecarousel">
+            <scrollSpeed>.05</scrollSpeed>
+            <origin>0 0</origin>
+            <maxLogoCount>10</maxLogoCount>
+            <size>1 1</size>
+            <type>vertical_wheel</type>
+            <pos ifSubset="Wheel Position:Right">0.34 0</pos>
+            <pos ifSubset="Wheel Position:Left">-0.34 0</pos>
+            <logoSize>0.15 0.250</logoSize>
+            <logoScale>1.4</logoScale>
+            <color>00000000</color>
+            <logoRotation>-12.5</logoRotation>
+            <logoRotationOrigin ifSubset="Wheel Position:Right">4 0.5</logoRotationOrigin>
+            <logoRotationOrigin ifSubset="Wheel Position:Left">-2.5 0.5</logoRotationOrigin>
+            <logoRotation ifSubset="Wheel Position:Right">-10.5</logoRotation>
+            <logoRotation ifSubset="Wheel Position:Left">-14.5</logoRotation>
+            <logoAlignment>center</logoAlignment>
 
-<image name="pointer" extra="true">
-<pos ifSubset="Wheel Position:Right">0.937 0.405</pos>
-<pos ifSubset="Wheel Position:Left">0 0.405</pos>
-<maxSize>0.2 0.2</maxSize>
-<path ifSubset="Wheel Position:Left">./art/wheel/pointers/default-left.png</path>
-<path ifSubset="Wheel Position:Right">./art/wheel/pointers/default.png</path>
-<path ifSubset="Wheel Position:Right">./art/wheel/pointers/${system.theme}.png</path>
-<zIndex>5</zIndex>
-</image>
+            <itemTemplate>
+                <container>
 
-<image name="swb1" ifSubset="Wheel Background:Light" extra="true">
-<pos>0 0</pos>
-<size>1 1</size>
-<path>./art/wheel/light.png</path>
-<zIndex>4</zIndex>
-<flipX ifSubset="Wheel Position:Left">true</flipX>
-<flipX ifSubset="Wheel Position:Right">false</flipX>
-</image>
+                    <!-- Wheel image if it exists -->
+                    <image name="wheelimage">
+                        <visible>exists({game:wheel})</visible>
+                        <pos>0.5</pos>
+                        <origin>0.5</origin>
+                        <maxSize>0.9 0.5</maxSize>
+                        <path>{game:wheel}</path>
+                        <zIndex>20</zIndex>
+                        <opacity>1</opacity>
+                        <linearSmooth>true</linearSmooth>
+                    </image>
 
-<image name="swb2" ifSubset="Wheel Background:Dark" extra="true">
-<pos>0 0</pos>
-<size>1 1</size>
-<path>./art/wheel/dark.png</path>
-<zIndex>4</zIndex>
-<flipX ifSubset="Wheel Position:Left">true</flipX>
-<flipX ifSubset="Wheel Position:Right">false</flipX>
-</image>
+                    <!-- Marquee fallback if wheel doesn't exist -->
+                    <image name="marqueeimage">
+                        <visible>!exists({game:wheel})</visible>
+                        <pos>0.5</pos>
+                        <origin>0.5</origin>
+                        <maxSize>0.9 0.5</maxSize>
+                        <path>{game:marquee}</path>
+                        <zIndex>20</zIndex>
+                        <opacity>1</opacity>
+                        <linearSmooth>true</linearSmooth>
+                    </image>
 
-<image name="swb3" ifSubset="Wheel Background:Bright" extra="true">
-<pos>0 0</pos>
-<size>1 1</size>
-<opacity>.9</opacity>
-<path>./art/wheel/bright.png</path>
-<zIndex>4</zIndex>
-<rotation ifSubset="Wheel Position:Left">180</rotation>
-<rotation ifSubset="Wheel Position:Right">0</rotation>
-</image>
+                    <!-- Favorite icon -->
+                    <image name="favorite" extra="true">
+                        <visible>{game:favorite}</visible>
+                        <path>./art/icons/favorite.png</path>
+                        <origin>0</origin>
+                        <pos>0 .25</pos>
+                        <zIndex>21</zIndex>
+                        <size>0.15 0.15</size>
+                    </image>
 
+                    <!-- Game name text fallback -->
+                    <text name="gamename">
+                        <visible>!exists({game:wheel}) && !exists({game:marquee})</visible>
+                        <text>{game:name}</text>
+                        <fontPath>${themePath}/art/fonts/charge-vector.otf</fontPath>
+                        <color>FFFFFF</color>
+                        <alignment>center</alignment>
+                        <fontSize>0.027</fontSize>
+                        <lineSpacing>1</lineSpacing>
+                        <size>0.75 0.5</size>
+                        <pos>0.115 0.25</pos>
+                        <glowColor>00000066</glowColor>
+                        <glowSize>2</glowSize>
+                        <zIndex>20</zIndex>
+                        <multiLine>true</multiLine>
+                    </text>
 
-</view>
- 
+                </container>
+            </itemTemplate>
+
+            <zIndex>300</zIndex>
+        </gamecarousel>
+
+        <!-- Pointer image -->
+        <image name="pointer" extra="true">
+            <pos ifSubset="Wheel Position:Right">0.937 0.405</pos>
+            <pos ifSubset="Wheel Position:Left">0 0.405</pos>
+            <maxSize>0.2 0.2</maxSize>
+            <path ifSubset="Wheel Position:Left">./art/wheel/pointers/default-left.png</path>
+            <path ifSubset="Wheel Position:Right">./art/wheel/pointers/default.png</path>
+            <path ifSubset="Wheel Position:Right">./art/wheel/pointers/${system.theme}.png</path>
+            <zIndex>5</zIndex>
+        </image>
+
+        <!-- Wheel background images -->
+        <image name="swb1" ifSubset="Wheel Background:Light" extra="static">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./art/wheel/light.png</path>
+            <zIndex>4</zIndex>
+            <flipX ifSubset="Wheel Position:Left">true</flipX>
+            <flipX ifSubset="Wheel Position:Right">false</flipX>
+        </image>
+
+        <image name="swb2" ifSubset="Wheel Background:Dark" extra="static">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./art/wheel/dark.png</path>
+            <zIndex>4</zIndex>
+            <flipX ifSubset="Wheel Position:Left">true</flipX>
+            <flipX ifSubset="Wheel Position:Right">false</flipX>
+        </image>
+
+        <image name="swb3" ifSubset="Wheel Background:Bright" extra="static">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <opacity>.9</opacity>
+            <path>./art/wheel/bright.png</path>
+            <zIndex>4</zIndex>
+            <rotation ifSubset="Wheel Position:Left">180</rotation>
+            <rotation ifSubset="Wheel Position:Right">0</rotation>
+        </image>
+
+    </view>
+
 </theme>

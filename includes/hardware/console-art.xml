@@ -11,8 +11,8 @@
 <origin>0.5 0.5</origin>
 <maxSize>0.20 .20</maxSize>
 <zIndex>30</zIndex>
-<path>./art/consoles/${system.theme}.png</path>
-<path>./art/consoles/${system.theme}-${region}.png</path>
+<path>firstfile("${themePath}/art/consoles/" + {game:system} + "-${region}.png",
+"${themePath}/art/consoles/" + {game:system} + ".png")</path>
 <storyboard>
 <animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
 <animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>

@@ -20,7 +20,7 @@
 
   <!-- Marquee -->
   <image name="launching_image1" ifSubset="Game Launch Display:Marquee" extra="true">
-    <path>firstfile({game:marquee}, {game:image})</path>
+    <path>firstfile({game:wheel}, {game:marquee}, {game:image})</path>
     <origin>0.5 0.5</origin>
     <pos>0.5 0.5</pos>
     <maxSize>0.6 0.6</maxSize>
@@ -53,19 +53,6 @@
     <maxSize>1 1</maxSize>
     <zIndex>10</zIndex>
   </image>
-
-  <!-- Loading text -->
-  <text name="loadingtext" extra="true">
-    <text>Loading...</text>
-    <color>FFFFFFFF</color>
-    <fontSize>0.07</fontSize>
-    <glowColor>00000020</glowColor>
-    <glowSize>2</glowSize>
-    <glowOffset>1</glowOffset>
-    <origin>0.5 0.85</origin>
-    <pos>0.5 0.85</pos>
-    <zIndex>20</zIndex>
-  </text>
 
 </view></theme>
 

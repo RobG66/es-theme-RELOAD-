@@ -4,13 +4,15 @@
 
 <view name="detailed, gamecarousel">
 
-<image name="showlogo" extra="true">
+<image name="system_logo_top" extra="true" if="${system.manufacturer} != 'Collections'">
 <pos ifSubset="Wheel Position:Right">0.610 0.075</pos>
 <pos ifSubset="Wheel Position:Left">0.390 0.075</pos>
+
 <origin>0.5 0.5</origin>
 <maxSize>0.20 .10</maxSize>
+
 <zIndex>22</zIndex>
-   <path>./art/logos/${system.theme}.png</path>
+	    <path>./art/logos/${system.theme}.png</path>
             <path>./art/logos/${system.theme}.svg</path>
             <path>./art/logos/${system.theme}-${lang}.png</path>
             <path>./art/logos/${system.theme}-${lang}.svg</path>
@@ -24,105 +26,166 @@
 	    <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.svg</path>
             <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.png</path>
           
-	    <path ifSubset="System Logo Priority:white">./art/logos/${system.theme}-w.svg</path>
-                  
-           
+	    <path ifSubset="System Logo Priority:white">./art/logos/${system.theme}-w.svg</path>                
+</image>
 
-<animation mode="linear" duration="4000" begin="1000" property="scale" repeat="forever" autoreverse="true" from="1.00" to="1.02"/>
+<image name="system_logo_bottom" extra="static" if="${system.manufacturer} == 'Collections'">
+<pos ifSubset="Wheel Position:Right">0.610 0.84</pos>
+<pos ifSubset="Wheel Position:Left">0.390 0.84</pos>
+
+<origin>0.5 0.5</origin>
+<maxSize>0.15 .07</maxSize>
+
+<zIndex>22</zIndex>
+	    <path>./art/logos/${system.theme}.png</path>
+            <path>./art/logos/${system.theme}.svg</path>
+            <path>./art/logos/${system.theme}-${lang}.png</path>
+            <path>./art/logos/${system.theme}-${lang}.svg</path>
+	    <path>./art/logos/${system.theme}-${region}.png</path>
+            <path>./art/logos/${system.theme}-${region}.svg</path>
+
+	    <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.svg</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.png</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${lang}.svg</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}.${lang}.png</path>
+	    <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.svg</path>
+            <path ifSubset="System Logo Priority:png">./art/logos/${system.theme}-${region}.png</path>
+          
+	    <path ifSubset="System Logo Priority:white">./art/logos/${system.theme}-w.svg</path>                
 </image>
 
 
-<!--------------------------------------------------------->
-<!----------------------- ART EXTRAS ---------------------->
-<!--------------------------------------------------------->
+<image name="system_logo2" extra="true" if="${system.manufacturer} == 'Collections'">
+<pos ifSubset="Wheel Position:Right">0.610 0.075</pos>
+<pos ifSubset="Wheel Position:Left">0.390 0.075</pos>
+<origin>0.5 0.5</origin>
+<maxSize>0.20 .10</maxSize>
+<zIndex>22</zIndex>
+<path>./../../art/logos/{game:system}.png</path>
+</image>
 
+<image name="game_art" aspect="true" extra="true">
+<path ifSubset="GamelistArtType:Thumbnail">{game:thumbnail}</path>
+<path ifSubset="GamelistArtType:Boxart">{game:boxart}</path>
+<visible>true</visible>
+<origin>.5 .5</origin>
+<visible>{game:system:hardwareType} != 'arcade'</visible>
+<visible ifSubset="HideGamelistArt:NO">true</visible>
+<pos ifSubset="Wheel Position:Right">0.445 0.81</pos>
+<pos ifSubset="Wheel Position:Left">0.555 0.81</pos>
+<maxSize>0.10 .25</maxSize>
+<zIndex>500</zIndex>
+<storyboard>
+<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+</storyboard>    
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+</storyboard>  
+</image>
+
+
+
+<!-- COLLECTION IMAGE -->
+<image name="collectionimage2" extra="static" if="${system.manufacturer} == 'Collections'">
+    <pos ifSubset="Wheel Position:Right">0.610 0.89</pos>
+    <pos ifSubset="Wheel Position:Left">0.390 0.89</pos>
+    <maxSize>.07 .04</maxSize>
+    <origin>.5 .5</origin>
+    <path>./art/icons/collection1.png</path>
+  <zIndex>999</zIndex>
+</image>
+
+
+<!-- Video Framing -->	
 <image name="black_screen" extra="true">
 <pos ifSubset="Wheel Position:Right">0 0</pos>
 <pos ifSubset="Wheel Position:Left">0.44 0</pos>
 <size>1 1</size>
-<zIndex>16</zIndex>
+<zIndex>15</zIndex>
 <path>./art/video frames/black_screen.png</path>
 </image>
 
-<image name="video_frame" extra="true">
+<image name="video_frame_cabinet" extra='true'>
 <pos ifSubset="Wheel Position:Right">0 0</pos>
 <pos ifSubset="Wheel Position:Left">0.44 0</pos>
 <size>1 1</size>
-<zIndex>20</zIndex>
-<path>./art/video frames/default.png</path>
-<path>./art/video frames/${system.theme}.png</path>
+<zIndex>17</zIndex>
+<default>./art/video frames/default.png</default>
+<path>./../../art/video frames/{game:system}.png</path>
 </image>
 
-
-<!----------------------------------------------------------->
-<!---------------------- GAMELIST ART ----------------------->
-<!----------------------------------------------------------->
-
-
-<image name="icon_background_small" extra="true">
-<pos ifSubset="Wheel Position:Right">0.61 0.18</pos>
-<pos ifSubset="Wheel Position:Left">0.385 0.18</pos>
-<path>./art/gamelist/icon_background.png</path>
-<origin>0.5 0.5</origin>
-<maxSize>0.18 .10</maxSize>
-<zIndex>12</zIndex>
-<opacity>.75</opacity>
-<visible>true</visible>
-</image>
-
-
-<video name="md_video">
+<video name="game_video" extra="true">
+<visible>exists({game:video})</visible>
+<path>{game:video}</path>
 <pos ifSubset="Wheel Position:Right">0.2810 0.53</pos>
 <pos ifSubset="Wheel Position:Left">0.728 0.53</pos>
 <origin>0.5 0.5</origin>
 <effect>none</effect>
 <maxSize>0.35 0.505</maxSize>
 <delay>.25</delay>
-<zIndex>18</zIndex>
-<showSnapshotNoVideo>true</showSnapshotNoVideo>
+<zIndex>16</zIndex>
 </video>
 
-
-<image name="md_marquee" extra="true">
+<!-- Other Art -->	
+<image name="game_marquee" extra="true">
+<visible>exists({game:marquee})</visible>
+<path>{game:marquee}</path>
 <pos ifSubset="Wheel Position:Right">0.282 0.126</pos>
 <pos ifSubset="Wheel Position:Left">0.721 0.126</pos>
 <origin>0.5 0.5</origin>
-<maxSize>0.4 .2</maxSize>
+<size>0.41 .2</size>
+<zIndex>30</zIndex>
 </image>
 
-
-<image name="icon_background_small" extra="true">
-<visible>false</visible>
-</image>
-
-<image name="icon_background_big" extra="true">
-<path>./art/gamelist/icon_background_detailed.png</path>
-<pos ifSubset="Wheel Position:Right">0.612 0.375</pos>
-<pos ifSubset="Wheel Position:Left">0.387 0.375</pos>
+<image name="game_marquee2" extra="true">
+<visible>!exists({game:marquee})</visible>
+<path>{game:wheel}</path>
+<pos ifSubset="Wheel Position:Right">0.282 0.126</pos>
+<pos ifSubset="Wheel Position:Left">0.721 0.126</pos>
 <origin>0.5 0.5</origin>
-<maxSize>0.42 0.48</maxSize>
-<zIndex>13</zIndex>
+<size>0.41 .2</size>
+<zIndex>30</zIndex>
 </image>
 
-<image name="icon_background_big_blackframe" extra="true">
-<path>./art/gamelist/icon_background_detailed_blackframe.png</path>
-<pos ifSubset="Wheel Position:Right">0.612 0.37</pos>
-<pos ifSubset="Wheel Position:Left">0.387 0.37</pos>
-<origin>0.5 0.5</origin>
-<maxSize>0.440 0.49</maxSize>
-<zIndex>12</zIndex>
+
+
+<image name="card" extra="static">
+<path>./art/gamelist/card.png</path>
+<pos ifSubset="Wheel Position:Right">0.612 0.132</pos>
+<pos ifSubset="Wheel Position:Left">0.387 0.132</pos>
+<origin>0.5 0</origin>
+<size>0.225 0.67</size>
+<zIndex>19</zIndex>
+</image>
+
+<image name="card_blackframe" extra="static">
+<path>./art/gamelist/card_blackframe.png</path>
+<pos ifSubset="Wheel Position:Right">0.612 0.132</pos>
+<pos ifSubset="Wheel Position:Left">0.387 0.132</pos>
+<origin>0.5 0</origin>
+<size>0.225 0.67</size>
+<zIndex>18</zIndex>
 <opacity>.80</opacity>
 </image>
 
-<text name="md_name">
-<origin>0 0</origin>
-<pos ifSubset="Wheel Position:Right">0.513 0.169</pos>
-<pos ifSubset="Wheel Position:Left">0.287 0.169</pos>
+
+<!--  Game Info Starts Here -->	
+<text name="game_name" extra="true">
+<text>{game:name}</text>
+<origin>.5 .5</origin>
+<pos ifSubset="Wheel Position:Right">0.612 0.186</pos>
+<pos ifSubset="Wheel Position:Left">0.388 0.186</pos>
+<fontSize>0.03</fontSize>
 <size>0.20 0.035</size>
 <zIndex>999</zIndex>     
 <color>00FF00</color> 
 <alignment>center</alignment>
-<forceUppercase>false</forceUppercase> 
 </text>
 
 <image name="line" extra="true">
@@ -133,6 +196,7 @@
 <zIndex>999</zIndex>
 </image>
 	
+
 <!-- Regional Flag -->
 <image name="md_flag">
 <origin>0 0</origin>
@@ -142,8 +206,9 @@
 <zIndex>999</zIndex>
 </image>
 
+
 <!--  Favorite Icons -->	
-<image name="md_notfavorite" extra="true">
+<image name="not_favorite" extra="true">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.555 0.543</pos>
 <pos ifSubset="Wheel Position:Left">0.328 0.543</pos>
@@ -153,7 +218,8 @@
 <zIndex>999</zIndex>
 </image> 
 
-<image name="md_favorite">
+<image name="favorite" extra="true">
+<visible>{game:favorite}</visible>
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.555 0.543</pos>
 <pos ifSubset="Wheel Position:Left">0.328 0.543</pos>
@@ -165,7 +231,7 @@
 
 
 <!--  Save State Icons -->
-<image name="md_nosavestate" extra="true">
+<image name="no_savestate" extra="true">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.579 0.543</pos>
 <pos ifSubset="Wheel Position:Left">0.353 0.543</pos>
@@ -175,7 +241,8 @@
 <zIndex>150</zIndex>
 </image>
 
-<image name="md_savestate">
+<image name="savestate" extra="true">
+<visible>{game:hasSaveState}</visible>
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.579 0.543</pos>
 <pos ifSubset="Wheel Position:Left">0.353 0.543</pos>
@@ -185,9 +252,9 @@
 <zIndex>150</zIndex>
 </image>
  
+
 <!--  Achievement Icons -->		
-		
-<image name="md_notcheevos" extra="true">
+<image name="no_cheevos" extra="true">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.606 0.543</pos>
 <pos ifSubset="Wheel Position:Left">0.380 0.543</pos>
@@ -198,7 +265,8 @@
 <linearSmooth>true</linearSmooth>
 </image>
 
-<image name="md_cheevos">
+<image name="cheevos" extra="true">
+<visible>{game:cheevos}</visible>
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.606 0.543</pos>
 <pos ifSubset="Wheel Position:Left">0.380 0.543</pos>
@@ -209,69 +277,79 @@
 <linearSmooth>true</linearSmooth>
 </image>
 
-<!-- PDF from gamelist -->
 <!--  Manual Icons -->
-<image name="md_nomanual" extra="true">
+<image name="no_manual" extra="true">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.632 0.543</pos>
 <pos ifSubset="Wheel Position:Left">0.405 0.543</pos>
 <maxSize>0.035 0.035</maxSize>
 <path>./art/icons/manual.png</path>
 <color>80808090</color>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
 </image>
 
-<image name="md_manual">
+<image name="manual" extra="true">
+<visible>{game:hasManual}</visible>
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.632 0.543</pos>
 <pos ifSubset="Wheel Position:Left">0.405 0.543</pos>
 <maxSize>0.035 0.035</maxSize>
 <path>./art/icons/manual.png</path>
 <color>dddddd</color>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
 </image>
 		
 <!--  Map Icons -->	
-<image name="md_nomap" extra="true">
+<image name="no_map" extra="true">
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.659 0.543</pos>
 <pos ifSubset="Wheel Position:Left">0.432 0.543</pos>
 <maxSize>0.035 0.035</maxSize>
 <path>./art/icons/map.png</path>
 <color>80808090</color>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
 </image>
 
-<image name="md_map">
+<image name="map" extra="true">
+<visible>!empty({game:map})</visible>
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.659 0.543</pos>
 <pos ifSubset="Wheel Position:Left">0.432 0.543</pos>
 <maxSize>0.035 0.035</maxSize>
 <path>./art/icons/map.png</path>
 <color>dddddd</color>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
 </image>
 
 <!--  Kid Game Icons -->
-<image name="md_notkidgame" extra="true"> 
+<image name="not_kidgame" extra="true"> 
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.684 0.543</pos>
 <pos ifSubset="Wheel Position:Left">0.460 0.543</pos>
 <maxSize>0.035 0.035</maxSize>
 <path>./art/icons/kid.png</path>
 <color>80808090</color>
-<zIndex>100</zIndex>
+<zIndex>150</zIndex>
 <linearSmooth>true</linearSmooth>
 </image>
 
-<image name="md_kidgame"> 
+<image name="kidgame" extra="true"> 
+<visible>{game:kidGame}</visible>
 <origin>0 0</origin>
 <pos ifSubset="Wheel Position:Right">0.684 0.543</pos>
 <pos ifSubset="Wheel Position:Left">0.460 0.543</pos>
 <maxSize>0.035 0.035</maxSize>
 <path>./art/icons/kid.png</path>
 <color>dddddd</color>
-<zIndex>100</zIndex>
+<zIndex>150</zIndex>
 <linearSmooth>true</linearSmooth>
 </image>
 
-<image name="md_favorite, md_map, md_manual, md_savestate, md_cheevos, md_hidden, md_kidgame">
+<image name="favorite, map, manual, savestate, cheevos, hidden, kidgame">
 <storyboard>  
 <animation property="opacity" from="0.6" to="1"  duration="350" mode="easeInOut" autoreverse="true" repeat="forever"/>   
 </storyboard>
@@ -284,7 +362,8 @@
 <pos ifSubset="Wheel Position:Right">0.512 0.215</pos>
 <pos ifSubset="Wheel Position:Left">0.287 0.215</pos>
 <size>0.15 0.035</size>
-<zIndex>15</zIndex>     
+<zIndex>23</zIndex>
+<color>ffea00</color>     
 </text>
 
 <!--  Publisher Value -->	  
@@ -294,8 +373,8 @@
 <pos ifSubset="Wheel Position:Left">0.400 0.215</pos>
 <size>0.09 0.035</size>
 <color>ffffff</color>
-<zIndex>15</zIndex>   
- </text>
+<zIndex>23</zIndex>   
+</text>
 
 <!--  Developer Text -->
 <text name="md_lbl_developer">
@@ -303,7 +382,8 @@
 <pos ifSubset="Wheel Position:Right">0.512 0.250</pos>
 <pos ifSubset="Wheel Position:Left">0.287 0.250</pos>
 <size>0.15 0.035</size>
-<zIndex>15</zIndex>        
+<zIndex>23</zIndex>   
+<color>ffea00</color>     
 </text>
 
 <!--  Developer Value -->	  
@@ -313,7 +393,7 @@
 <pos ifSubset="Wheel Position:Left">0.400 0.250</pos>
 <size>0.09 0.035</size>
 <color>ffffff</color>
-<zIndex>15</zIndex>	
+<zIndex>23</zIndex>	
 </text>
 
 <!--  Release Date Text -->	  
@@ -322,7 +402,8 @@
 <pos ifSubset="Wheel Position:Right">0.512 0.285</pos>
 <pos ifSubset="Wheel Position:Left">0.287 0.285</pos>
 <size>0.15 0.035</size>
-<zIndex>15</zIndex> 
+<zIndex>23</zIndex> 
+<color>ffea00</color>
 </text>
 	  
 <!--  Release Date Value -->
@@ -332,7 +413,7 @@
 <pos ifSubset="Wheel Position:Left">0.400 0.285</pos>
 <size>0.15 0.035</size>
 <color>ffffff</color>
-<zIndex>15</zIndex>
+<zIndex>23</zIndex>
 </datetime>
 
 
@@ -342,7 +423,8 @@
 <pos ifSubset="Wheel Position:Right">0.512 0.320</pos>
 <pos ifSubset="Wheel Position:Left">0.287 0.320</pos>
 <size>0.15 0.035</size>
-<zIndex>15</zIndex>  
+<zIndex>23</zIndex>  
+<color>ffea00</color>
 </text>
 
 <!--  Genre Value -->	  
@@ -352,7 +434,7 @@
 <pos ifSubset="Wheel Position:Left">0.400 0.320</pos>
 <size>0.09 0.035</size>
 <color>ffffff</color>
-<zIndex>15</zIndex> 
+<zIndex>23</zIndex> 
 </text>   
 
 <!--  Number Of Players Text -->	  
@@ -361,7 +443,8 @@
 <pos ifSubset="Wheel Position:Right">0.512 0.355</pos>
 <pos ifSubset="Wheel Position:Left">0.287 0.355</pos>
 <size>0.15 0.035</size>
-<zIndex>15</zIndex>    
+<zIndex>23</zIndex>  
+<color>ffea00</color>  
 </text>
 
 <!--  Number Of Players Value -->	  
@@ -371,7 +454,7 @@
 <pos ifSubset="Wheel Position:Left">0.400 0.355</pos>
 <size>0.15 0.035</size>
 <color>ffffff</color>
-<zIndex>15</zIndex>     
+<zIndex>23</zIndex>     
 </text>	
 
 <!--  Play Count Text -->
@@ -380,7 +463,8 @@
 <pos ifSubset="Wheel Position:Right">0.512 0.390</pos>
 <pos ifSubset="Wheel Position:Left">0.287 0.390</pos>
 <size>0.15 0.035</size>
-<zIndex>15</zIndex>  
+<zIndex>23</zIndex>  
+<color>ffea00</color>
 </text>
 
 <!--  Play Count Value -->	
@@ -390,7 +474,7 @@
 <pos ifSubset="Wheel Position:Left">0.400 0.390</pos>
 <size>0.15 0.035</size>
 <color>ffffff</color>
-<zIndex>15</zIndex>  
+<zIndex>23</zIndex>  
 </text>
   
 <!--  Last Played Text -->	  
@@ -399,7 +483,8 @@
 <pos ifSubset="Wheel Position:Right">0.512 0.425</pos>
 <pos ifSubset="Wheel Position:Left">0.287 0.425</pos>
 <size>0.15 0.035</size>
-<zIndex>15</zIndex>  
+<zIndex>23</zIndex>  
+<color>ffea00</color>
 </text>
 
 <!--  Last Played Value -->	  
@@ -409,7 +494,7 @@
 <pos ifSubset="Wheel Position:Left">0.400 0.425</pos>
 <size>0.15 0.035</size>
 <color>ffffff</color>
-<zIndex>15</zIndex>        
+<zIndex>23</zIndex>        
 </datetime>   	
   
 <!--  Game Time Text -->
@@ -418,7 +503,8 @@
 <pos ifSubset="Wheel Position:Right">0.512 0.460</pos>
 <pos ifSubset="Wheel Position:Left">0.287 0.460</pos>
 <size>0.15 0.035</size>
-<zIndex>15</zIndex>    
+<zIndex>23</zIndex>   
+<color>ffea00</color> 
 </text>
 
 <!--  Game Time Value -->	
@@ -428,32 +514,31 @@
 <pos ifSubset="Wheel Position:Left">0.400 0.460</pos>
 <size>0.15 0.035</size>
 <color>ffffff</color>
-<zIndex>15</zIndex>      
+<zIndex>23</zIndex>      
 </text>	
 
-<rating name="md_rating">
+  <rating name="md_rating">
   <pos ifSubset="Wheel Position:Right">0.555 0.497</pos>
   <pos ifSubset="Wheel Position:Left">0.335 0.497</pos>
   <size>0.19 0.039</size>
-  <zIndex>15</zIndex>
-  <filledPath>./art/icons/star_filled.svg</filledPath>
-  <unfilledPath>./art/icons/star_unfilled.svg</unfilledPath>
-</rating>
-
+    <filledPath>./art/icons/star_filled_gold.svg</filledPath>
+    <unfilledPath>./art/icons/star_unfilled_gold.svg</unfilledPath>
+  </rating>
 
 <text name="md_description">
-<pos ifSubset="Wheel Position:Right">0.530 0.638</pos>
-<pos ifSubset="Wheel Position:Left">0.302 0.638</pos>
-<size>0.17 0.28</size>
+<pos ifSubset="Wheel Position:Right">0.515 0.587</pos>
+<pos ifSubset="Wheel Position:Left">0.293 0.587</pos>
+<size>0.19 0.16</size>
 <alignment>left</alignment>   
 <zIndex>32</zIndex>
-<autoScrollSpeed>40</autoScrollSpeed>  
+<autoScrollSpeed>40</autoScrollSpeed> 
+<fontSize>0.02</fontSize>
 </text>
 
-<image name="descriptionframe" extra="true">
-<pos ifSubset="Wheel Position:Right">0.514 0.62</pos>
-<pos ifSubset="Wheel Position:Left">0.286 0.62</pos>
-<size>0.200 0.32</size>
+<image name="descriptionframe" extra="static">
+<pos ifSubset="Wheel Position:Right">0.509 0.582</pos>
+<pos ifSubset="Wheel Position:Left">0.284 0.582</pos>
+<size>0.205 0.172</size>
 <zIndex>22</zIndex>
 <path>./art/gamelist/description_frame.png</path>
 </image>
