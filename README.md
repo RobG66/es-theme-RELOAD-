@@ -1,3 +1,10 @@
+October 12th, 2025
+
+Small Update
+- Fix text case from Boxart to BoxArt for a media setting
+- Add cartridge (cd/disk/etc) media to gamelist view
+
+
 August 16th, 2025
 
  New Version
