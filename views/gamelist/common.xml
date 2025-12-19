@@ -144,6 +144,20 @@
 			<zIndex>16</zIndex>
 		</video>
 
+
+		<video name="screenshot" extra="true">
+			<visible>!exists({game:video})</visible>
+			<path>{game:image}</path>
+			<pos ifSubset="Wheel Position:Right">0.2810 0.53</pos>
+			<pos ifSubset="Wheel Position:Left">0.728 0.53</pos>
+			<origin>0.5 0.5</origin>
+			<effect>none</effect>
+			<maxSize>0.35 0.505</maxSize>
+			<delay>.25</delay>
+			<zIndex>16</zIndex>
+		</video>
+
+
 		<!-- Other Art -->
 		<image name="game_marquee" extra="true">
 			<visible>exists({game:marquee})</visible>

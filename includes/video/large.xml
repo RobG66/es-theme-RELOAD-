@@ -5,22 +5,57 @@
 
 <view name="system">
 
-<video name="background_video" extra="true">
-<visible>true</visible>
-</video>
+  <video name="background_video" extra="true">
+            <pos ifSubset="Wheel Position:Right">0.358 0.524</pos>
+            <pos ifSubset="Wheel Position:Left">0.64 0.524</pos>
+            <origin>0.5 0.5</origin>
+            <maxSize>0.482 0.66</maxSize>
+            <path>{random}</path>
+            <path>./videos/${system.theme}.mp4</path>
+            <path>./videos/${system.theme}.flv</path>
+            <path>./videos/${system.theme}.avi</path>
+            <delay>.1</delay>
+            <effect>none</effect>
+	    <storyboard>
+                <animation property="opacity" from="0" to="0" begin="0" duration="0" mode="linear"/>
+                <animation property="opacity" from="0" to="1" begin="0" duration="500" mode="linear"/>
+            </storyboard>
+            <zIndex>11</zIndex>
+        </video>
 
-<image name="video_border" extra="static">
-<visible>true</visible>
-</image>
+        <image name="videoborder" extra="true">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./art/video frames/video_border.png</path>
+            <zIndex>4</zIndex>
+            <flipX ifSubset="Wheel Position:Left">true</flipX>
+            <flipX ifSubset="Wheel Position:Right">false</flipX>
+            <zIndex>12</zIndex>
+        </image>
 
-<video name="reduced_video" extra="true">
-<visible>false</visible>
-</video>
+        <image name="blackframe" extra="true">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./art/video frames/black_frame.png</path>
+            <zIndex>4</zIndex>
+            <flipX ifSubset="Wheel Position:Left">true</flipX>
+            <flipX ifSubset="Wheel Position:Right">false</flipX>
+            <zIndex>9</zIndex>
+        </image>
 
-
-<image name="reduced_background_shadow" extra="static">
-<visible>false</visible>
-</image>
+	<image name="consoleart" aspect="true" extra="true">
+            <pos ifSubset="Wheel Position:Right">0.60 0.85</pos>
+            <pos ifSubset="Wheel Position:Left">0.40 0.85</pos>
+            <maxSize>0.20 .20</maxSize>
+	    <origin>.5 .5</origin>
+            <zIndex>30</zIndex>
+            <path>./art/consoles/${system.theme}.png</path>
+            <path>./art/consoles/${system.theme}-${region}.png</path>
+              <storyboard>
+                <animation property="opacity" from="0" to="0" begin="0" duration="0" mode="linear"/>
+                <animation property="opacity" from="0" to="1" begin="700" duration="300" mode="linear"/>
+            </storyboard>
+        </image>
 
 </view>
  
